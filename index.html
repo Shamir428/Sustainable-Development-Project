@@ -1,279 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health & Wellbeing</title>
-
-    <!-- ===== I know we're meant to have css in a diff file i will do that soon i just couldn't get it to work before. ===== -->
-    <style>
-
-        /* RESET */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-  
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-        }
-
-
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-     
-        header {
-            background: #1f2937;
-            color: white;
-            padding: 15px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-  
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            width: 45px;
-            margin-right: 10px;
-        }
-
-        
-        .nav-links {
-            list-style: none;
-            display: flex;
-        }
-
-        .nav-links li {
-            margin-left: 20px;
-            align-items: center;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 14px;
-            border-radius: 6px;
-            transition: 0.3s;
-            align-items: center;
-        }
-
-        .nav-links a:hover {
-            background: #3b82f6;
-        }
-
-        .nav-links a.active {
-            background: #10b981;
-        }
-
-     
-        main {
-            padding: 40px 0;
-        }
-
-        h2 {
-            margin-bottom: 15px;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        /* CARDS */
-        .card {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            transition: 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .card ul {
-            padding-left: 20px;
-        }
-
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-        }
-
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            transition: 0.3s;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .gallery-text {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background: rgba(0,0,0,0.6);
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
-        /* FOOTER */
-        footer {
-            background: #1f2937;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 20px;
-        }
-
-        footer a {
-            color: #10b981;
-            text-decoration: none;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-    <div class="container header-container">
-        <div class="logo">
-            <img src="images/logo.png" alt="Health and wellbeing logo">
-            <h1>Health & Wellbeing</h1>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Health and wellbeing logo">
+                <h1>Health & Wellbeing</h1>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="simulator.html">Action Impact Simulator</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-     <nav>
-    <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="simulator.html">Action Impact Simulator</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="profile.html">User Profile</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="sitemap.html">Sitemap</a></li>
-    </ul>
-</nav>
-    </div>
-</header>
+    <main class="container">
 
-<main class="container">
+        <section>
+            <h2>Improving Health & Wellbeing</h2>
+            <p>
+                This website encourages students to take practical steps towards better physical and mental health.
+            </p>
+        </section>
 
-    <section>
-        <h2>Improving Health & Wellbeing</h2>
+        <section>
+
+            <div class="card">
+                <img src="images/mental-health.jpg" alt="Students discussing mental health">
+                <h3>Mental Health Matters</h3>
+                <p>Support and open conversations help reduce stress and stigma.</p>
+                <ul>
+                    <li>Check in on friends</li>
+                    <li>Use support services</li>
+                    <li>Talk openly</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <img src="images/exercise.jpg" alt="Students exercising">
+                <h3>Stay Active</h3>
+                <p>Regular movement improves both mental and physical health.</p>
+                <ul>
+                    <li>Walk daily</li>
+                    <li>Join sports</li>
+                    <li>Take breaks</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <img src="images/healthy-food.jpg" alt="Healthy meals">
+                <h3>Healthy Habits</h3>
+                <p>Good nutrition and sleep help maintain energy and focus.</p>
+                <ul>
+                    <li>Eat well</li>
+                    <li>Stay hydrated</li>
+                    <li>Sleep properly</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Explore Topics</h2>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/page1.jpg" alt="Mental health">
+                    <div class="gallery-text">Mental Health</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/page2.jpg" alt="Fitness">
+                    <div class="gallery-text">Fitness</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/page3.jpg" alt="Healthy living">
+                    <div class="gallery-text">Healthy Living</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/page4.jpg" alt="Community">
+                    <div class="gallery-text">Community</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
         <p>
-            This website encourages students to take practical steps towards better physical and mental health.
+            <a href="#">Page Editor</a> |
+            <a href="#">Validation</a> |
+            <a href="#">Accessibility</a>
         </p>
-    </section>
-
-    <section>
-
-        <div class="card">
-            <img src="images/mental-health.jpg" alt="Students discussing mental health">
-            <h3>Mental Health Matters</h3>
-            <p>Support and open conversations help reduce stress and stigma.</p>
-            <ul>
-                <li>Check in on friends</li>
-                <li>Use support services</li>
-                <li>Talk openly</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <img src="images/exercise.jpg" alt="Students exercising">
-            <h3>Stay Active</h3>
-            <p>Regular movement improves both mental and physical health.</p>
-            <ul>
-                <li>Walk daily</li>
-                <li>Join sports</li>
-                <li>Take breaks</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <img src="images/healthy-food.jpg" alt="Healthy meals">
-            <h3>Healthy Habits</h3>
-            <p>Good nutrition and sleep help maintain energy and focus.</p>
-            <ul>
-                <li>Eat well</li>
-                <li>Stay hydrated</li>
-                <li>Sleep properly</li>
-            </ul>
-        </div>
-
-    </section>
-
-    <section>
-        <h2>Explore Topics</h2>
-
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="images/page1.jpg" alt="Mental health">
-                <div class="gallery-text">Mental Health</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="images/page2.jpg" alt="Fitness">
-                <div class="gallery-text">Fitness</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="images/page3.jpg" alt="Healthy living">
-                <div class="gallery-text">Healthy Living</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="images/page4.jpg" alt="Community">
-                <div class="gallery-text">Community</div>
-            </div>
-        </div>
-    </section>
-
-</main>
-
-<footer>
-    <p>
-        <a href="#">Page Editor</a> |
-        <a href="#">Validation</a> |
-        <a href="#">Accessibility</a>
-    </p>
-    <p>Shamir Zeeshan | w2132884</p>
-</footer>
+        <p>Shamir Zeeshan | w2132884</p>
+    </footer>
 
 </body>
+
 </html>
