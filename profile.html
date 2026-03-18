@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Profile</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background: #1f2937;
+    color: white;
+    padding: 15px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    background: #10b981;
+    padding: 5px;
+}
+
+/* MAIN */
+main {
+    padding: 20px;
+}
+
+/* PROFILE BOX */
+.profile-section {
+    display: none;
+    background: #f4f4f4;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* PROGRESS */
+#progressBar {
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#progressFill {
+    height: 20px;
+    width: 0%;
+    background: green;
+    border-radius: 10px;
+}
+
+/* BUTTONS */
+button {
+    margin: 5px;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Health & Wellbeing</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="proj.html">Home</a></li>
+            <li><a href="profile.html" class="active">User Profile</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- MAIN -->
+<main>
+
+<h2>Build Your Profile</h2>
+
+<p>Click each step to build your profile. You can skip and return anytime.</p>
+
+<button onclick="step1()">Step 1: Basic Info</button>
+<button onclick="step2()">Step 2: Interests</button>
+<button onclick="step3()">Step 3: Actions</button>
+
+<!-- PROGRESS -->
+<p id="progressText">Progress: 0%</p>
+<div id="progressBar">
+    <div id="progressFill"></div>
+</div>
+
+<!-- PROFILE DISPLAY -->
+<div id="profileOutput">
+
+    <div id="basic" class="profile-section">
+        <h3>Basic Info</h3>
+        <p id="name"></p>
+        <p id="role"></p>
+        <p id="age"></p>
+    </div>
+
+    <div id="interests" class="profile-section">
+        <h3>Interests</h3>
+        <p id="interest"></p>
+        <p id="exercise"></p>
+        <p id="diet"></p>
+    </div>
+
+    <div id="actions" class="profile-section">
+        <h3>Health Actions</h3>
+        <p id="action"></p>
+        <p id="goal"></p>
+        <p id="habit"></p>
+    </div>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background:#1f2937;color:white;text-align:center;padding:10px;">
+    <p><a href="#" style="color:#10b981;">Page Editor</a> | <a href="#" style="color:#10b981;">Validation</a></p>
+    <p>Your Name | ID</p>
+</footer>
+
+<script>
+
+// STORE PROFILE DATA
+let profile = {
+    name: "",
+    role: "",
+    age: "",
+    interest: "",
+    exercise: "",
+    diet: "",
+    action: "",
+    goal: "",
+    habit: ""
+};
+
+// STEP COMPLETION TRACKER
+let stepsCompleted = {
+    step1: false,
+    step2: false,
+    step3: false
+};
+
+// ===== STEP 1 =====
+function step1() {
+
+    let name = prompt("Enter your name (or press cancel to skip):");
+    let role = prompt("Are you a student or worker?");
+    let age = prompt("Enter your age:");
+
+    if (name) {
+        profile.name = name;
+        document.getElementById("name").textContent = "Name: " + name;
+    }
+
+    if (role) {
+        profile.role = role;
+        document.getElementById("role").textContent = "Role: " + role;
+    }
+
+    if (age) {
+        profile.age = age;
+        document.getElementById("age").textContent = "Age: " + age;
+    }
+
+    if (name || role || age) {
+        document.getElementById("basic").style.display = "block";
+        stepsCompleted.step1 = true;
+    }
+
+    updateProgress();
+}
+
+// ===== STEP 2 =====
+function step2() {
+
+    let interest = prompt("What health topic interests you?");
+    let exercise = prompt("Do you exercise regularly?");
+    let diet = prompt("Do you eat healthy?");
+
+    if (interest) {
+        profile.interest = interest;
+        document.getElementById("interest").textContent = interest;
+    }
+
+    if (exercise) {
+        profile.exercise = exercise;
+        document.getElementById("exercise").textContent = "Exercise: " + exercise;
+    }
+
+    if (diet) {
+        profile.diet = diet;
+        document.getElementById("diet").textContent = "Diet: " + diet;
+    }
+
+    if (interest || exercise || diet) {
+        document.getElementById("interests").style.display = "block";
+        stepsCompleted.step2 = true;
+    }
+
+    updateProgress();
+}
+
+// ===== STEP 3 =====
+function step3() {
+
+    let action = prompt("What action will you take for better health?");
+    let goal = prompt("Set a health goal:");
+    let habit = prompt("One habit to improve:");
+
+    if (action) {
+        profile.action = action;
+        document.getElementById("action").textContent = action;
+    }
+
+    if (goal) {
+        profile.goal = goal;
+        document.getElementById("goal").textContent = "Goal: " + goal;
+    }
+
+    if (habit) {
+        profile.habit = habit;
+        document.getElementById("habit").textContent = "Habit: " + habit;
+    }
+
+    if (action || goal || habit) {
+        document.getElementById("actions").style.display = "block";
+        stepsCompleted.step3 = true;
+    }
+
+    updateProgress();
+}
+
+// ===== PROGRESS =====
+function updateProgress() {
+    let completed = 0;
+
+    if (stepsCompleted.step1) completed++;
+    if (stepsCompleted.step2) completed++;
+    if (stepsCompleted.step3) completed++;
+
+    let percent = (completed / 3) * 100;
+
+    document.getElementById("progressText").textContent =
+        "Progress: " + percent + "% (" + completed + " of 3 steps completed)";
+
+    document.getElementById("progressFill").style.width = percent + "%";
+}
+
+</script>
+
+</body>
+</html>
