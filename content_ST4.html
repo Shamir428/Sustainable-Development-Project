@@ -88,7 +88,7 @@
     <footer>
     </footer>
     <script>
-function checkSteps() {
+ function checkSteps() {
   let steps = document.getElementById("steps").value;
   let message = "";
 
@@ -101,6 +101,20 @@ function checkSteps() {
   }
 
   document.getElementById("result").innerText = message;
+}
+</script>
+<script>
+function checkSleep() {
+  let sleep = document.getElementById("sleep").value;
+  let message = "";
+
+  if (sleep >= 7) {
+    message = "✅ Great! You got enough sleep.";
+  } else {
+    message = "⚠️ Try to get at least 7 hours of sleep.";
+  }
+
+  document.getElementById("sleepResult").innerText = message;
 }
 </script>
 </body>
