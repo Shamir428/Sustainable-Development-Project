@@ -1,3 +1,13 @@
+
+
+
+
+# UNFINISHED FILE
+
+
+
+
+
 # Team Guide
 
 # This file outlines how our team works, including roles, file ownership, and github usage
@@ -8,7 +18,9 @@
 
 # How to use Github (git)
 
-1. 
+1.
 
 
 git config pull.rebase true
+
+git pull --rebase origin main - resolve git issues
