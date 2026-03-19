@@ -22,3 +22,5 @@
 
 
 git config pull.rebase true
+
+git pull --rebase origin main - resolve git issues
