@@ -155,3 +155,7 @@ footer a {
     color: #10b981;
     text-decoration: none;
 }
+img {
+    max-width: 50%;
+    height: auto;
+}
