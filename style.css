@@ -72,6 +72,13 @@ header {
 .nav-links a.active {
     background: #10b981;
 }
+a {
+    color: #3b82f6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 ul {
     margin-top: 10px;
 }
@@ -176,4 +183,11 @@ button {
 button:hover {
     background: #2563eb;
 }
+img {
+    display: block;
+    max-width: 100%;
+}
 
+* {
+    transition: all 0.2s ease-in-out;
+}
