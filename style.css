@@ -155,4 +155,18 @@ footer a {
     color: #10b981;
     text-decoration: none;
 }
+/* BUTTONS */
+button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2563eb;
+}
 
