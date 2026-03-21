@@ -72,6 +72,13 @@ header {
 .nav-links a.active {
     background: #10b981;
 }
+ul {
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
 
 
 main {
