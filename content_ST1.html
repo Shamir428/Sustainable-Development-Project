@@ -12,10 +12,19 @@
         padding: 40px;
         text-align: center;
     }
-    body{
-        padding: 20px;
+  
         
     }
+    .top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
 
 
     </style>
@@ -31,8 +40,7 @@
             <!-- Shared navigation: only update the active class per page -->
             <nav>
                 <ul class="nav-links">
-                    <li><a href="home.html" class="active">Home</a></li>
-                    <li><a href="simulator.html">Action Impact Simulator</a></li>
+                    <a href="content_ST1.html" class="active">Your Page</a>                    <li><a href="simulator.html">Action Impact Simulator</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="profile.html">User Profile</a></li>
                     <li><a href="feedback.html">Feedback</a></li>
@@ -46,12 +54,21 @@
 
     <main>
         <section class="hero">
+          <h1> Physical Health and Student Wellbeing</h1>
+          <nav class="page-nav">
+    <ul>
+        <li><a href="#importance">Why It Matters</a></li>
+        <li><a href="#sleep">Sleep & Wellbeing</a></li>
+        <li><a href="#steps">Walking Tracker</a></li>
+        <li><a href="#sleep-tracker">Sleep Tracker</a></li>
+    </ul>
+</nav>
   <h2>Welcome to Your Health & Wellbeing Hub</h2>
   <p> Physical </p>
   <p>Track your activity, improve your sleep, and build healthier habits as a student.</p>
 </section>
 
-<section>
+<section id="importance">
   <h2>Why Physical Health is Important</h2>
   <ul>
     <li>Improves energy levels ⚡</li>
@@ -61,7 +78,7 @@
   </ul>
 </section>
 
-<section>
+<section id="sleep">
   <h2>Sleep & Wellbeing</h2>
   <p>Getting enough sleep helps your body recover and improves focus and mood.</p>
 
@@ -72,7 +89,7 @@
   </ul>
 </section>
 
-<section id="physical-health-tracker">
+<section id="steps">
     <h2>Physical Health - Walking Tracker 🚶</h2>
 
     <p>
@@ -88,7 +105,7 @@
     <p id="result"></p>
 </section>
 
-<section>
+<section id="sleep-tracker">
   <h2>Sleep Tracker</h2>
 
   <label>How many hours did you sleep?</label><br><br>
@@ -100,8 +117,7 @@
 </section>
     </main>
         
-    <footer>
-    </footer>
+    
     <script>
  function checkSteps() {
   let steps = document.getElementById("steps").value;
@@ -133,6 +149,13 @@ function checkSleep() {
 }
 </script>
 <footer>
+    <p>
+        <a href="#">Page Editor</a> |
+        <a href="#">Validation</a> |
+        <a href="#">Accessibility</a>
+    </p>
     <p>Shamir Zeeshan | w2132884</p>
+</footer>
+    <a href="#top" class="top-btn">⬆ Top</a>
 </body>
 </html>

@@ -6,6 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health & Wellbeing</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+/* ===== HOME PAGE ONLY STYLES ===== */
+
+/* Make cards display nicely in a row */
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Slight highlight effect for cards on homepage only */
+.home-cards .card:hover {
+    transform: scale(1.03);
+}
+
+/* Make gallery items clickable */
+.gallery a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Darker overlay on hover */
+.gallery-item:hover .gallery-text {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Emphasise intro text */
+.intro {
+    font-size: 18px;
+    font-weight: 500;
+}
+</style>
 </head>
 
 <body>
@@ -38,12 +70,14 @@
 
         <section>
             <h2>Improving Health & Wellbeing</h2>
-            <p>
-                This website encourages students to take practical steps towards better physical and mental health.
-            </p>
+            <p class="intro">
+    This website promotes practical ways students can improve their physical and mental wellbeing.
+    It focuses on everyday actions that can reduce stress, increase energy, and build healthier lifestyles.
+    Our goal is to make wellbeing simple, achievable, and relevant to student life.
+</p>
         </section>
 
-        <section>
+        <section class="home-cards">
 
             <div class="card">
                 <img src="mentalh.jpg" alt="Students discussing mental health">
