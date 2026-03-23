@@ -22,3 +22,5 @@ About the nav bar, the page title / name inside the header shouldn't probably be
 
 basically change h1 element inside the header / nav bar menu to anchor element to create link back to home.html , u can still make that title as big as before by adding some css styles to it
 
+
+For the first section on your home page, can you add something like class="hero" or id hero to the section tag? Because what you have basically is the intro section that grabs user attention immediately, which is usually a hero section. Adding a class or id then would make it easier to target and style that specific section uniquely instead of styling all section elements in general.
