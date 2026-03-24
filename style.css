@@ -272,8 +272,17 @@ img {
     height: auto;
     margin: 20px auto; /* centers image */
     border-radius: 10px;
+    
 }
 
+/* ===== CONTENT IMAGES ===== */
+.content-img {
+    max-width: 700px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: block;
+}
 /* Optional: limit very large images */
 .content-img {
     max-width: 700px;
