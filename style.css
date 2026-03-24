@@ -265,3 +265,16 @@ img:hover {
 .mb-20 {
     margin-bottom: 20px;
 }
+/* ===== IMAGE STYLING (GLOBAL) ===== */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; /* centers image */
+    border-radius: 10px;
+}
+
+/* Optional: limit very large images */
+.content-img {
+    max-width: 700px;
+}
