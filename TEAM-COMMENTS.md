@@ -9,10 +9,6 @@
 
 (Daniel's comments)
 
-(21/3/2026)
-
-For Shamir:
-Can you put all of the image files to the img folder so it's more organized and then update all of the img html tags to reflect the new file paths
 
 (23/3/2026)
 
