@@ -46,6 +46,7 @@ header {
 }
 
 
+
 .logo {
     display: flex;
     align-items: center;
@@ -55,7 +56,10 @@ header {
     width: 45px;
     margin-right: 10px;
 }
-
+nav {
+    display: flex;
+    align-items: center;
+}
 
 .nav-links {
     list-style: none;
