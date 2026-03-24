@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Health & Wellbeing</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    /* ===== GALLERY PAGE ONLY STYLES ===== */
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    .gallery-item {
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .gallery-item img {
+        border-radius: 10px;
+    }
+
+    /* Hover effect */
+    .gallery-item:hover {
+        transform: scale(1.05);
+    }
+
+    /* MODAL (extended view) */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .modal-content img {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .close-btn {
+        cursor: pointer;
+        background: red;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    /* User customisation */
+    .controls button {
+        margin: 5px;
+        padding: 5px 10px;
+    }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Health and wellbeing logo">
+            <h1>Health & Wellbeing</h1>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="simulator.html">Action Impact Simulator</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <h1>Gallery</h1>
+    <p>Explore different aspects of health and wellbeing through images and insights.</p>
+
+    <!-- ===== GALLERY GRID ===== -->
+    <div class="gallery-grid">
+
+        <div class="gallery-item" onclick="openModal('images/exercise.jpg', 'Staying active improves both physical and mental health.')">
+            <img src="images/exercise.jpg" alt="Students exercising">
+            <p>Stay Active</p>
+        </div>
+
+        <div class="gallery-item" onclick="openModal('images/sleep.jpg', 'Getting enough sleep helps recovery and focus.')">
+            <img src="images/sleep.jpg" alt="Student sleeping">
+            <p>Healthy Sleep</p>
+        </div>
+
+        <div class="gallery-item" onclick="openModal('images/healthy-food.jpg', 'Balanced nutrition supports energy and wellbeing.')">
+            <img src="images/healthy-food.jpg" alt="Healthy food">
+            <p>Nutrition</p>
+        </div>
+
+        <div class="gallery-item" onclick="openModal('images/walking.jpg', 'Walking daily is a simple way to stay active.')">
+            <img src="images/walking.jpg" alt="Person walking">
+            <p>Daily Activity</p>
+        </div>
+
+    </div>
+
+</main>
+
+<!-- ===== MODAL ===== -->
+<div class="modal" id="modal">
+    <div class="modal-content" id="modalContent">
+
+        <button class="close-btn" onclick="closeModal()">Close</button>
+
+        <img id="modalImg" src="">
+        <p id="modalText"></p>
+
+        <!-- User controls -->
+        <div class="controls">
+            <button onclick="changeColor()">Change Colour</button>
+            <button onclick="changeFont()">Change Font</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>
+        <a href="#">Page Editor</a> |
+        <a href="#">Validation</a> |
+        <a href="#">Accessibility</a>
+    </p>
+    <p>Your Name | Your ID</p>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+function openModal(imgSrc, text) {
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("modalImg").src = imgSrc;
+    document.getElementById("modalText").innerText = text;
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+/* User customisation */
+function changeColor() {
+    document.getElementById("modalContent").style.background = "#e0f7fa";
+}
+
+function changeFont() {
+    document.getElementById("modalContent").style.fontFamily = "cursive";
+}
+</script>
+
+</body>
+</html>
