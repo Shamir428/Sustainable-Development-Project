@@ -1,4 +1,4 @@
-/* ===== Global site styles: used by all pages ===== */
+/* ===== GLOBAL VARIABLES ===== */
 :root {
     --primary: #3b82f6;
     --secondary: #10b981;
@@ -7,12 +7,18 @@
     --text: #333;
     --white: #ffffff;
 }
+
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===== BASE STYLES ===== */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -20,100 +26,16 @@ body {
     color: var(--text);
     line-height: 1.6;
 }
+
 section {
     margin-bottom: 50px;
 }
-
 
 .container {
     width: 90%;
     max-width: 1100px;
     margin: auto;
 }
-
-
-header {
-    background: var(--dark);
-    color: var(--white);
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-.logo span{
-    font-size: 2.5em;
-    font-weight: bold;
-}
-
-.logo img {
-    width: 45px;
-    margin-right: 10px;
-}
-nav {
-    display: flex;
-    align-items: center;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-    align-items: center;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 14px;
-    border-radius: 6px;
-    transition: 0.3s;
-    align-items: center;
-}
-
-.nav-links a:hover {
-    background: var(--primary);
-}
-
-.nav-links a.active {
-    background: var(--secondary);
-}
-.nav-links a:focus {
-    outline: 2px solid var(--secondary);
-}
-a {
-    color: #3b82f6;
-}
-/* ===== ACCESSIBILITY: FOCUS STYLES ===== */
-a:focus, button:focus {
-    outline: 2px dashed var(--primary);
-    outline-offset: 3px;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-ul {
-    margin-top: 10px;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
 
 main {
     padding: 40px 0;
@@ -127,9 +49,93 @@ p {
     margin-bottom: 20px;
 }
 
-/* CARDS */
+/* ===== HEADER ===== */
+header {
+    background: var(--dark);
+    color: var(--white);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* FIXED spacing */
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+/* NAV STATES */
+.nav-links a:hover {
+    background: var(--primary);
+}
+
+.nav-links a.active {
+    background: var(--secondary);
+}
+
+.nav-links a:focus {
+    outline: 2px solid var(--secondary);
+}
+
+/* ===== LINKS ===== */
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ACCESSIBILITY */
+a:focus, button:focus {
+    outline: 2px dashed var(--primary);
+    outline-offset: 3px;
+}
+
+/* ===== LISTS ===== */
+ul {
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* ===== CARDS ===== */
 .card {
-    background: white;
+    background: var(--white);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 12px;
@@ -151,39 +157,46 @@ p {
     padding-left: 20px;
 }
 
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-}
-
-.gallery-item {
-    position: relative;
-    overflow: hidden;
+/* ===== IMAGES ===== */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
     border-radius: 10px;
 }
 
-.gallery-item img {
+img:hover {
+    opacity: 0.95;
+}
+
+/* Content-specific images */
+.content-img {
+    max-width: 700px;
     width: 100%;
-    transition: 0.3s;
+    margin: 20px auto;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.1);
+/* ===== BUTTONS ===== */
+button {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.gallery-text {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    text-align: center;
-    padding: 10px;
+button:hover {
+    background: #2563eb;
 }
 
-/* FOOTER */
+button:active {
+    transform: scale(0.97);
+}
+
+/* ===== FOOTER ===== */
 footer {
     background: var(--dark);
     color: var(--white);
@@ -196,46 +209,21 @@ footer a {
     color: var(--secondary);
     text-decoration: none;
 }
-/* BUTTONS */
-button {
-    background: var(--primary);
-    color: var(--white);
-    border: none;
-    padding: 10px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-button:focus {
-    outline: 2px dashed var(--primary);
-    outline-offset: 3px;
+
+/* ===== UTILITY CLASSES ===== */
+.text-center {
+    text-align: center;
 }
 
-button:active {
-    transform: scale(0.97);
+.mt-20 {
+    margin-top: 20px;
 }
 
-button:hover {
-    background: #2563eb;
-}
-img {
-    display: block;
-    max-width: 100%;
-    border-radius: 8px;
+.mb-20 {
+    margin-bottom: 20px;
 }
 
-img:hover {
-    opacity: 0.95;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.2s ease-in-out;
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
 
     .header-container {
@@ -249,10 +237,6 @@ img:hover {
         margin-top: 10px;
     }
 
-    .nav-links li {
-        margin: 10px 0;
-    }
-
     main {
         padding: 20px 0;
     }
@@ -260,41 +244,4 @@ img:hover {
     .container {
         width: 95%;
     }
-    html {
-    scroll-behavior: smooth;
-}
-}
-/* ===== UTILITY CLASSES ===== */
-.text-center {
-    text-align: center;
-}
-
-.mt-20 {
-    margin-top: 20px;
-}
-
-.mb-20 {
-    margin-bottom: 20px;
-}
-/* ===== IMAGE STYLING (GLOBAL) ===== */
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto; /* centers image */
-    border-radius: 10px;
-    
-}
-
-/* ===== CONTENT IMAGES ===== */
-.content-img {
-    max-width: 700px;
-    width: 100%;
-    margin: 20px auto;
-    border-radius: 10px;
-    display: block;
-}
-/* Optional: limit very large images */
-.content-img {
-    max-width: 700px;
 }
