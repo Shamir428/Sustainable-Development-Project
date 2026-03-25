@@ -80,22 +80,4 @@ font-size: 22px;
 footer {
     background-color: #1f2d3d;
     color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-footer p {
-    color: white; 
-    margin: 5px 0;
-    font-size: 16px;
-}
-
-footer a {
-    color: #2ecc71;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
