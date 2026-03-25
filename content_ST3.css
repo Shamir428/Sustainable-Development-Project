@@ -4,3 +4,29 @@
     margin: auto;
     margin-bottom: 2em;
 }
+
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    padding: 12px 18px;
+    text-decoration: none;
+    background-color: #1f2937;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.go-top:hover {
+    text-decoration: none;
+    color: #3b82f6;
+    transition: 0.5s;
+}
+
+.page-nav {}
+
+.page-nav-list {
+    display: flex;
+    flex-direction: row;
+}
