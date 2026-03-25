@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Health Matters</title>
+
+<meta http-equiv="refresh" content="4;url=home.html">
+
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', Arial, sans-serif;
+background-image: url("gymimage1.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
+}
+
+.overlay {
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.6);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+h1 {
+font-size: 48px;
+margin-bottom: 10px;
+}
+
+.subtitle {
+font-size: 18px;
+margin-bottom: 20px;
+}
+
+.group {
+margin-bottom: 20px;
+}
+
+.group ul {
+list-style: none;
+}
+
+.group li {
+font-size: 16px;
+}
+
+.countdown {
+margin-top: 20px;
+font-size: 18px;
+}
+
+button {
+margin-top: 20px;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+background-color: #10b981;
+color: white;
+}
+
+button:hover {
+background-color: #059669;
+}
+
+.loader {
+margin-top: 20px;
+width: 200px;
+height: 6px;
+background: rgba(255,255,255,0.3);
+border-radius: 10px;
+overflow: hidden;
+}
+
+.loader div {
+height: 100%;
+width: 0%;
+background: #10b981;
+animation: load 4s linear forwards;
+}
+
+@keyframes load {
+0% { width: 0%; }
+100% { width: 100%; }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+<h1>Health Matters</h1>
+
+<p class="subtitle">
+Small daily actions lead to a healthier life.
+</p>
+
+<div class="group">
+<p>Created by:</p>
+<ul>
+<li>Alex Seciu</li>
+<li>Shamir</li>
+<li>Daniel</li>
+</ul>
+</div>
+
+<div class="loader">
+<div></div>
+</div>
+
+<p class="countdown">
+Entering in <span id="count">4</span>...
+</p>
+
+<button onclick="skip()">Skip Intro</button>
+
+</div>
+
+<script>
+let count = 4;
+
+let timer = setInterval(function(){
+document.getElementById("count").innerHTML = count;
+count--;
+
+if(count < 0){
+clearInterval(timer);
+}
+},1000);
+
+function skip(){
+window.location.href = "home.html";
+}
+</script>
+
+</body>
+</html>
