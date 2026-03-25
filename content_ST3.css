@@ -5,6 +5,14 @@
     margin-bottom: 2em;
 }
 
+#hero h1 {
+    font-size: 2.2em;
+    margin-bottom: 0.6em;
+    color: #1f2937;
+    text-align: center;
+
+}
+
 .go-top {
     position: fixed;
     bottom: 20px;
@@ -24,9 +32,41 @@
     transition: 0.5s;
 }
 
-.page-nav {}
+.page-nav {
+    background-color: #e8f3e4;
+    border-left: 5px solid #7aa874;
+    padding: 1.25em 1.5em;
+    border-radius: 10px;
+    margin: 2em 0;
+}
 
 .page-nav-list {
-    display: flex;
-    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-nav h2 {
+    margin-right: 1em;
+    font-size: 1.4rem;
+    display: block;
+}
+
+.page-nav-list li:last-child {
+    margin-bottom: 0;
+}
+
+.page-nav-list li {
+    margin-bottom: 0.6em;
+}
+
+.page-nav-list a {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 550;
+}
+
+.page-nav-list a:hover {
+    color: #3b82f6;
 }
