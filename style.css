@@ -51,7 +51,7 @@ header {
     display: flex;
     align-items: center;
 }
-span{
+.logo span{
     font-size: 2.5em;
     font-weight: bold;
 }
