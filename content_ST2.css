@@ -30,10 +30,13 @@ padding-left: 12px;
 }
 
 p {
-max-width: 900px;
-margin: 12px auto;
-font-size: 17px;
-color: #374151;
+    max-width: 900px;
+    margin: 12px auto;
+    font-size: 17px;
+}
+
+body {
+    color: #374151;
 }
 
 img {
@@ -76,8 +79,4 @@ font-size: 32px;
 h2 {
 font-size: 22px;
 }
-}
-footer {
-    background-color: #1f2d3d;
-    color: white;
 }
