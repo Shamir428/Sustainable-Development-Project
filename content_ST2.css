@@ -8,7 +8,7 @@ box-sizing: border-box;
 body {
 font-family: 'Segoe UI', Arial, sans-serif;
 background: linear-gradient(135deg, #e3f2fd, #f1f8e9);
-color: #1f2937;
+
 line-height: 1.7;
 padding: 30px;
 }
