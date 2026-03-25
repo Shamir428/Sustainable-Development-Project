@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Health Impact Simulator</title>
+
+<link rel="stylesheet" href="simulator.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Health Impact Simulator</h1>
+
+<h2>Your Score: <span id="score">0</span></h2>
+<p id="impact">Select actions to see your impact</p>
+
+
+<div class="progress-container">
+    <div id="progress-bar"></div>
+</div>
+
+
+<div class="cards">
+
+    <div class="card" onclick="selectAction(this, 1)">
+        <h3>💧 Drink Water</h3>
+        <p>Stay hydrated</p>
+    </div>
+
+    <div class="card" onclick="selectAction(this, 3)">
+        <h3>🏃 Exercise</h3>
+        <p>Stay active</p>
+    </div>
+
+    <div class="card" onclick="selectAction(this, 3)">
+        <h3>😴 Sleep Well</h3>
+        <p>Rest properly</p>
+    </div>
+
+    <div class="card" onclick="selectAction(this, 2)">
+        <h3>🥗 Eat Healthy</h3>
+        <p>Balanced diet</p>
+    </div>
+
+    <div class="card" onclick="selectAction(this, 2)">
+        <h3>🧘 Mental Break</h3>
+        <p>Reduce stress</p>
+    </div>
+
+    <div class="card" onclick="selectAction(this, 2)">
+        <h3>🚫 Avoid Junk</h3>
+        <p>Better habits</p>
+    </div>
+
+</div>
+
+<button onclick="resetSimulator()">Reset</button>
+
+</div>
+
+<script src="simulator.js"></script>
+
+</body>
+</html>
