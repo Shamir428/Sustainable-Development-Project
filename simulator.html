@@ -8,6 +8,35 @@
 
 <link rel="stylesheet" href="simulator.css">
 <link rel="stylesheet" href="style.css">
+
+<!-- REQUIRED EMBEDDED CSS -->
+<style>
+/* Card images */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Points styling */
+.points {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Selected card highlight */
+.card.selected {
+    border: 2px solid #10b981;
+}
+
+/* Active nav link */
+.nav-links .active {
+    color: #38bdf8;
+}
+</style>
+
 </head>
 
 <body>
@@ -16,12 +45,12 @@
     <div class="container header-container">
         <div class="logo">
             <img src="img/logo.png" alt="Healthy Habits logo">
-            <span>Health Impact Simulator</span>
+            <span>Healthy Habits</span>
         </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="simulator.html">Action Impact Simulator</a></li>
+                <li><a href="simulator.html" class="active">Action Impact Simulator</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="profile.html">User Profile</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
@@ -32,7 +61,8 @@
     </div>
 </header>
 
-<div class="container">
+<!-- REQUIRED MAIN TAG -->
+<main class="container">
 
 <h1>Health Impact Simulator</h1>
 
@@ -46,50 +76,60 @@
 <div class="cards">
 
     <div class="card" onclick="selectAction(this, 1)">
+        <img src="img/drinkingwater1.jpg" alt="Drinking water">
         <h3>💧 Drink Water</h3>
-        <p>Stay hydrated</p>
+        <p>Stay hydrated throughout the day.</p>
+        <p class="points">Impact: +1</p>
     </div>
 
     <div class="card" onclick="selectAction(this, 3)">
+        <img src="img/exercise1.jpg" alt="Exercise">
         <h3>🏃 Exercise</h3>
-        <p>Stay active</p>
+        <p>Stay active with regular workouts.</p>
+        <p class="points">Impact: +3</p>
     </div>
 
     <div class="card" onclick="selectAction(this, 3)">
+        <img src="img/sleepingwell1.jpg" alt="Sleeping well">
         <h3>😴 Sleep Well</h3>
-        <p>Rest properly</p>
+        <p>Get enough rest every night.</p>
+        <p class="points">Impact: +3</p>
     </div>
 
     <div class="card" onclick="selectAction(this, 2)">
+        <img src="img/healthyfood1.jpg" alt="Healthy food">
         <h3>🥗 Eat Healthy</h3>
-        <p>Balanced diet</p>
+        <p>Maintain a balanced diet.</p>
+        <p class="points">Impact: +2</p>
     </div>
 
     <div class="card" onclick="selectAction(this, 2)">
+        <img src="img/reducestress1.jpg" alt="Reducing stress">
         <h3>🧘 Mental Break</h3>
-        <p>Reduce stress</p>
+        <p>Take time to relax and reduce stress.</p>
+        <p class="points">Impact: +2</p>
     </div>
 
     <div class="card" onclick="selectAction(this, 2)">
+        <img src="img/avoidjunk1.jpg" alt="Avoid junk food">
         <h3>🚫 Avoid Junk</h3>
-        <p>Better habits</p>
+        <p>Reduce unhealthy food intake.</p>
+        <p class="points">Impact: +2</p>
     </div>
 
 </div>
 
 <button onclick="resetSimulator()">Reset</button>
 
-</div>
-
-<script src="simulator.js"></script>
+</main>
 
 <footer>
-        <p> <b>Alex Seciu</b> | w2142671
-            <br>
-            <a href="pageEditor_ST2.html">Page editor </a> |
-            <a href="validation_ST2.html">Validation</a>
-        </p>
-    </footer>
+    <p><b>Alex Seciu</b> | w2142671<br>
+    <a href="pageEditor_ST2.html">Page editor</a> |
+    <a href="validation_ST2.html">Validation</a></p>
+</footer>
+
+<script src="simulator.js"></script>
 
 </body>
 </html>
