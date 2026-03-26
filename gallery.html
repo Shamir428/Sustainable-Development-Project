@@ -25,10 +25,7 @@
         border-radius: 10px;
     }
 
-    /* Hover effect */
-    .gallery-item:hover {
-        transform: scale(1.05);
-    }
+    
 
     /* MODAL (extended view) */
     .modal {
@@ -176,6 +173,19 @@ function changeColor() {
 function changeFont() {
     document.getElementById("modalContent").style.fontFamily = "cursive";
 }
+</script>
+<script>
+const items = document.querySelectorAll(".gallery-item");
+
+items.forEach(item => {
+    item.addEventListener("mouseover", () => {
+        item.style.transform = "scale(1.05)";
+    });
+
+    item.addEventListener("mouseout", () => {
+        item.style.transform = "scale(1)";
+    });
+});
 </script>
 
 </body>
