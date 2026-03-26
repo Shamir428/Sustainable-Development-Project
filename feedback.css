@@ -6,10 +6,11 @@
     margin-bottom: 0.5em;
 }
 
-.cards {
+.programmes-grid {
     display: grid;
+    grid-template-columns: auto auto auto;
 }
 
-.cards img {
-    width: 10%;
+.programmes-grid img {
+    width: 40%;
 }
