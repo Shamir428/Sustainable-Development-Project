@@ -1,32 +1,39 @@
-
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-font-family: 'Segoe UI', Arial, sans-serif;
-background: linear-gradient(135deg, #e3f2fd, #f1f8e9);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #f1f8e9);
+    color: #374151;
+    line-height: 1.7;
 
-line-height: 1.7;
-padding: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
 }
 
 h1 {
-text-align: center;
-font-size: 48px;
-margin-bottom: 30px;
-font-weight: 700;
-letter-spacing: 1px;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 h2 {
-margin-top: 50px;
-margin-bottom: 15px;
-font-size: 26px;
-border-left: 6px solid #10b981;
-padding-left: 12px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 26px;
+    border-left: 6px solid #10b981;
+    padding-left: 12px;
 }
 
 p {
@@ -35,48 +42,79 @@ p {
     font-size: 17px;
 }
 
-body {
-    color: #374151;
-}
-
 img {
-display: block;
-margin: 25px auto;
-width: 100%;
-max-width: 500px;
-border-radius: 15px;
-box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-transition: all 0.3s ease;
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
 }
 
 img:hover {
-transform: scale(1.05);
-box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
-h2 + img,
-h2 + img + p,
-h2 + p {
-background: white;
-padding: 25px;
-border-radius: 15px;
-box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+.section {
+    background: white;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+a {
+    color: #10b981;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #10b981;
+    color: white;
 }
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
 }
 
 @media (max-width: 600px) {
-body {
-padding: 15px;
-}
 
-h1 {
-font-size: 32px;
-}
+    main {
+        padding: 15px;
+    }
 
-h2 {
-font-size: 22px;
-}
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
 }
