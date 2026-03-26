@@ -6,15 +6,10 @@
 
 <title>Healthy Habits</title>
 
-
 <link rel="stylesheet" href="style.css">
 
-
-</head>
-
-<body>
-    <style>
-        * {
+<style>
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,7 +36,6 @@ h1 {
     font-size: 48px;
     margin-bottom: 30px;
     font-weight: 700;
-    letter-spacing: 1px;
 }
 
 h2 {
@@ -58,66 +52,17 @@ p {
     font-size: 17px;
 }
 
-.section img {
+/* IMAGE FIX */
+main img {
     display: block;
     margin: 15px auto;
-
-    width: 300px !important;   /* 🔥 FORCE SMALL SIZE */
-    max-width: 90% !important;
+    width: 300px;
+    max-width: 90%;
     height: auto;
-
     border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-
-    transition: transform 0.3s ease;
 }
 
-.section img:hover {
-    transform: scale(1.02);
-}
-img:hover {
-    transform: scale(1.03); 
-}
-
-.section {
-    background: white;
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-a {
-    color: #10b981;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background: #10b981;
-    color: white;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
+/* FOOTER */
 footer {
     background: #1f2937;
     color: white;
@@ -125,51 +70,42 @@ footer {
     padding: 20px;
     margin-top: auto;
 }
+</style>
 
-@media (max-width: 600px) {
+</head>
 
-    main {
-        padding: 15px;
-    }
+<body>
 
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    img {
-        max-width: 250px; 
-    }
-}
-    </style>
-
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <img src="img/logo.png" alt="Healthy Habits logo">
-                <span>Healthy Habits</span>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="ais.html">Action Impact Simulator</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="profile.html">User Profile</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="sitemap.html">Sitemap</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Healthy Habits logo">
+            <span>Healthy Habits</span>
         </div>
-    </header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="ais.html">Action Impact Simulator</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
 
 <h1>Healthy Habits</h1>
 
 <p>
-Healthy habits are small things we do every day that can make a big difference over time. For students especially, having good habits helps with focus, energy, and overall wellbeing. In this section, I am focusing on three main habits: eating well, staying hydrated, and getting enough sleep.
+Healthy habits are small, consistent actions that individuals perform daily, which contribute significantly to both physical and mental wellbeing. For students in particular, maintaining healthy habits is essential, as it directly impacts concentration, energy levels, productivity, and overall academic performance. In a fast-paced environment where students often face deadlines, stress, and long study hours, adopting positive habits can make a noticeable difference in daily life.
+</p>
+
+<p>
+This section focuses on three key habits that are especially important for students: maintaining a balanced diet, staying hydrated, and ensuring adequate sleep. These habits may appear simple, but when practised consistently, they create a strong foundation for a healthier lifestyle.
 </p>
 
 <h2>Eat Well</h2>
@@ -177,15 +113,15 @@ Healthy habits are small things we do every day that can make a big difference o
 <img src="img/food1.jpg" alt="Healthy food">
 
 <p>
-Eating well is one of the most important habits because it directly affects how your body and brain function. If you are not eating properly, you will feel tired, distracted, and less motivated.
+Eating well is one of the most fundamental aspects of maintaining good health. A balanced diet provides the body with essential nutrients such as vitamins, minerals, proteins, and carbohydrates, all of which are necessary for proper functioning. For students, this is particularly important, as the brain requires energy to focus, process information, and retain knowledge.
 </p>
 
 <p>
-A balanced diet should include things like fruits, vegetables, protein, and carbohydrates. These give your body the energy it needs to get through the day, especially when you have classes, assignments, or exams.
+Consuming a variety of foods, including fruits, vegetables, whole grains, and protein sources, helps maintain stable energy levels throughout the day. This prevents fatigue and allows students to remain focused during lectures, revision sessions, and exams. On the other hand, relying heavily on fast food or processed snacks can lead to energy crashes, lack of concentration, and reduced productivity.
 </p>
 
 <p>
-It is also important to avoid eating too much junk food. While it might be convenient, it can make you feel sluggish and lead to energy crashes later on.
+Additionally, developing the habit of planning meals and avoiding excessive junk food can have long-term benefits. Not only does it improve physical health, but it also supports mental clarity and overall wellbeing.
 </p>
 
 <h2>Stay Hydrated</h2>
@@ -193,15 +129,15 @@ It is also important to avoid eating too much junk food. While it might be conve
 <img src="img/hydrate1.jpg" alt="Drinking water">
 
 <p>
-Staying hydrated is something a lot of people ignore, but it is actually very important. Drinking enough water helps your body function properly and improves concentration.
+Hydration plays a crucial role in maintaining both physical and cognitive performance. Water is essential for nearly every function in the body, including regulating temperature, transporting nutrients, and supporting brain activity. Despite its importance, many students underestimate how much water they should be drinking daily.
 </p>
 
 <p>
-When you don’t drink enough water, you might feel tired, get headaches, or find it harder to focus. This can make studying or paying attention in class much harder than it needs to be.
+Dehydration can lead to symptoms such as headaches, fatigue, and difficulty concentrating. These effects can significantly impact a student’s ability to study effectively or participate in class activities. By simply increasing water intake, students can improve their focus, alertness, and overall performance.
 </p>
 
 <p>
-A simple habit like carrying a water bottle and drinking regularly throughout the day can make a big difference.
+A practical way to maintain hydration is by carrying a reusable water bottle and setting reminders to drink regularly. Small changes like this can quickly become habits and lead to noticeable improvements in daily energy levels.
 </p>
 
 <h2>Sleep Properly</h2>
@@ -209,39 +145,36 @@ A simple habit like carrying a water bottle and drinking regularly throughout th
 <img src="img/sleep1.jpg" alt="Sleeping">
 
 <p>
-Sleep is probably one of the most underrated habits. Many students stay up late, either studying or using their phones, but this usually makes things worse.
+Sleep is often overlooked, yet it is one of the most important factors in maintaining a healthy lifestyle. Students frequently sacrifice sleep due to studying, social activities, or excessive screen time. However, this can have negative consequences on both academic performance and mental health.
 </p>
 
 <p>
-Getting around 7–8 hours of sleep each night helps your brain recover, improves memory, and keeps your mood stable. Without enough sleep, it becomes much harder to concentrate and stay productive.
+Getting between 7 to 8 hours of quality sleep each night allows the body to recover and the brain to process and store information. Sleep is directly linked to memory retention, concentration, and emotional stability. Without adequate rest, students may struggle to stay focused, feel more stressed, and experience reduced productivity.
 </p>
 
 <p>
-Having a consistent sleep schedule and avoiding screens before bed can really help improve sleep quality.
+Establishing a consistent sleep routine, limiting screen exposure before bedtime, and creating a comfortable sleeping environment can significantly improve sleep quality. Over time, these changes can enhance both physical health and academic success.
 </p>
 
 <h2>Conclusion</h2>
 
 <p>
-Overall, these three habits might seem simple, but they are very powerful when done consistently. Eating well, staying hydrated, and sleeping properly can improve both physical and mental health, especially for students.
+In conclusion, healthy habits such as eating well, staying hydrated, and sleeping properly are essential for maintaining a balanced lifestyle. While these habits may seem simple, their impact is significant, especially for students managing academic responsibilities and daily stress.
 </p>
 
 <p>
-These are also the same habits included in the Action Impact Simulator, showing how small daily choices can lead to a healthier lifestyle.
+By making conscious choices and developing these habits over time, individuals can improve their overall wellbeing, increase productivity, and maintain better physical and mental health. These same principles are reflected in the Action Impact Simulator, where users can explore how small daily actions contribute to a healthier lifestyle.
 </p>
 
+</main>
+
 <footer>
-        <p> Alex Seciu | w2142671
-            <br>
-            <a href="pageEditor_ST2.html">Page editor </a> |
-            <a href="validation_ST2.html">Validation</a>
-        </p>
-    </footer>
-
-
-</body>
-</html>
-
+    <p>
+        Alex Seciu | w2142671<br>
+        <a href="pageEditor_ST2.html">Page editor</a> |
+        <a href="validation_ST2.html">Validation</a>
+    </p>
+</footer>
 
 </body>
 </html>
