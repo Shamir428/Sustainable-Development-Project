@@ -37,6 +37,12 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
 }
 
 h1 {
@@ -47,6 +53,7 @@ margin-bottom: 10px;
 .subtitle {
 font-size: 18px;
 margin-bottom: 20px;
+max-width: 600px;
 }
 
 .group {
@@ -75,6 +82,7 @@ border-radius: 6px;
 cursor: pointer;
 background-color: #10b981;
 color: white;
+transition: 0.3s;
 }
 
 button:hover {
@@ -112,7 +120,7 @@ animation: load 4s linear forwards;
 <h1>Health Matters</h1>
 
 <p class="subtitle">
-Small daily actions lead to a healthier life.
+Promoting healthy lifestyles and well-being aligned with Sustainable Development Goal 3.
 </p>
 
 <div class="group">
@@ -140,10 +148,10 @@ Entering in <span id="count">4</span>...
 let count = 4;
 
 let timer = setInterval(function(){
-document.getElementById("count").innerHTML = count;
 count--;
+document.getElementById("count").innerHTML = count;
 
-if(count < 0){
+if(count === 0){
 clearInterval(timer);
 }
 },1000);
@@ -154,5 +162,4 @@ window.location.href = "home.html";
 </script>
 
 </body>
-</html>
 </html>
