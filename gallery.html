@@ -8,13 +8,10 @@
 
     <style>
     /* ===== GALLERY PAGE ONLY STYLES ===== */
-    
-
 
     .gallery-item p {
-    font-weight: bold;
-}
-
+        font-weight: bold;
+    }
 
     .gallery-grid {
         display: grid;
@@ -31,9 +28,7 @@
         border-radius: 10px;
     }
 
-    
-
-    /* MODAL (extended view) */
+    /* MODAL */
     .modal {
         display: none;
         position: fixed;
@@ -68,12 +63,10 @@
         margin-bottom: 10px;
     }
 
-    /* User customisation */
     .controls button {
         margin: 5px;
         padding: 5px 10px;
     }
-
     </style>
 </head>
 
@@ -105,25 +98,25 @@
     <h1>Gallery</h1>
     <p>Explore different aspects of health and wellbeing through images and insights.</p>
 
-    <!-- ===== GALLERY GRID ===== -->
+    <!-- GALLERY GRID -->
     <div class="gallery-grid">
 
-        <div class="gallery-item" onclick="openModal('images/exercise.jpg', 'Staying active improves both physical and mental health.')">
+        <div class="gallery-item" onclick="openModal('img/imagesexercise.jpg', 'Staying active improves both physical and mental health.')">
             <img src="img/imagesexercise.jpg" alt="Students exercising">
             <p>Stay Active</p>
         </div>
 
-        <div class="gallery-item" onclick="openModal('images/sleep.jpg', 'Getting enough sleep helps recovery and focus.')">
+        <div class="gallery-item" onclick="openModal('img/imagessleep.jpg', 'Getting enough sleep helps recovery and focus.')">
             <img src="img/imagessleep.jpg" alt="Student sleeping">
             <p>Healthy Sleep</p>
         </div>
 
-        <div class="gallery-item" onclick="openModal('images/healthy-food.jpg', 'Balanced nutrition supports energy and wellbeing.')">
+        <div class="gallery-item" onclick="openModal('img/food1.jpg', 'Balanced nutrition supports energy and wellbeing.')">
             <img src="img/food1.jpg" alt="Healthy food">
             <p>Nutrition</p>
         </div>
 
-        <div class="gallery-item" onclick="openModal('images/walking.jpg', 'Walking daily is a simple way to stay active.')">
+        <div class="gallery-item" onclick="openModal('img/imageswalking.jpg', 'Walking daily is a simple way to stay active.')">
             <img src="img/imageswalking.jpg" alt="Person walking">
             <p>Daily Activity</p>
         </div>
@@ -132,19 +125,20 @@
 
 </main>
 
-<!-- ===== MODAL ===== -->
+<!-- MODAL -->
 <div class="modal" id="modal">
     <div class="modal-content" id="modalContent">
 
-        <button class="close-btn" onclick="closeModal()">Close</button>
+        <button type="button" class="close-btn" onclick="closeModal()">Close</button>
 
-        <img id="modalImg" src="">
+        <!-- ✅ FIXED (no empty src + has alt) -->
+        <img id="modalImg" src="img/food1.jpg" alt="Expanded gallery image">
+
         <p id="modalText"></p>
 
-        <!-- User controls -->
         <div class="controls">
-            <button onclick="changeColor()">Change Colour</button>
-            <button onclick="changeFont()">Change Font</button>
+            <button type="button" onclick="changeColor()">Change Colour</button>
+            <button type="button" onclick="changeFont()">Change Font</button>
         </div>
 
     </div>
@@ -153,17 +147,20 @@
 <footer>
     <p>
         <a href="pageEditor_ST1.html">Page Editor</a> |
-        <a href="#">Validation</a> |
+        <a href="validation_ST1.html">Validation</a> |
         <a href="#">Accessibility</a>
     </p>
     <p>Shamir Zeeshan | w2132884</p>
 </footer>
 
-<!-- ===== JAVASCRIPT ===== -->
+<!-- JAVASCRIPT -->
 <script>
 function openModal(imgSrc, text) {
-    document.getElementById("modal").style.display = "flex";
-    document.getElementById("modalImg").src = imgSrc;
+    const modal = document.getElementById("modal");
+    const img = document.getElementById("modalImg");
+
+    modal.style.display = "flex";
+    img.src = imgSrc;
     document.getElementById("modalText").innerText = text;
 }
 
@@ -171,7 +168,6 @@ function closeModal() {
     document.getElementById("modal").style.display = "none";
 }
 
-/* User customisation */
 function changeColor() {
     document.getElementById("modalContent").style.background = "#e0f7fa";
 }
@@ -180,6 +176,7 @@ function changeFont() {
     document.getElementById("modalContent").style.fontFamily = "cursive";
 }
 </script>
+
 <script>
 const items = document.querySelectorAll(".gallery-item");
 
