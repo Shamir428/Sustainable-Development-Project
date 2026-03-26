@@ -42,19 +42,25 @@ p {
     font-size: 17px;
 }
 
-img {
+.section img {
     display: block;
-    margin: 25px auto;
-    width: 100%;
-    max-width: 500px;
-    border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
+    margin: 15px auto;
+
+    width: 300px !important;   /* 🔥 FORCE SMALL SIZE */
+    max-width: 90% !important;
+    height: auto;
+
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+
+    transition: transform 0.3s ease;
 }
 
+.section img:hover {
+    transform: scale(1.02);
+}
 img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    transform: scale(1.03); 
 }
 
 .section {
@@ -116,5 +122,9 @@ footer {
 
     h2 {
         font-size: 22px;
+    }
+
+    img {
+        max-width: 250px; 
     }
 }
