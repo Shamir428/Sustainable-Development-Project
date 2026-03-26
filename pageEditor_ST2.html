@@ -13,27 +13,26 @@
 <body>
 
 <header>
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <img src="img/logo.png" alt="Healthy Habits logo">
-                <span>Healthy Habits</span>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="ais.html">Action Impact Simulator</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="profile.html">User Profile</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="sitemap.html">Sitemap</a></li>
-                </ul>
-            </nav>
+    <div class="container header-container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Healthy Habits logo">
+            <span>Healthy Habits</span>
         </div>
-    </header>
-    <h1>Page Editor - Alex Seciu</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="ais.html">Action Impact Simulator</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
+
+<h1 style="text-align:center; margin-top:20px;">Page Editor - Alex Seciu</h1>
 
 <section class="section">
 <h2>Contents</h2>
@@ -47,20 +46,16 @@
 <li><a href="#compliance">JANET Compliance</a></li>
 <li><a href="#meetings">Meetings Log</a></li>
 <li><a href="#reflection">Reflection</a></li>
+<li><a href="#references">References</a></li>
 </ul>
 </section>
 
 <section class="section" id="role">
 <h2>Student Name and Role</h2>
-
 <p><strong>Alex Seciu</strong></p>
 
 <p>
-Within this group project, my role focused on developing the interactive and user-focused elements of the website. I was responsible for designing and implementing the Splash Screen, the Action Impact Simulator, and the Content Page. My aim was to ensure that the website was not only informative but also engaging, allowing users to actively interact with the content rather than simply reading static information.
-</p>
-
-<p>
-I contributed both technically and creatively by implementing functionality using JavaScript and ensuring that all pages followed a consistent design style. I also worked collaboratively with my group members during meetings, where we discussed layout, structure, and overall design direction.
+Within this group project, my role focused on developing the interactive and user-focused elements of the website. I was responsible for designing and implementing the Splash Screen, the Action Impact Simulator, and the Content Page. My aim was to ensure that the website was not only informative but also engaging.
 </p>
 </section>
 
@@ -68,33 +63,31 @@ I contributed both technically and creatively by implementing functionality usin
 <h2>Completed Pages / Tasks</h2>
 
 <ul>
-<li><a href="index.html" target="_blank">Splash Screen</a></li>
-<li><a href="simulator.html" target="_blank">Action Impact Simulator</a></li>
-<li><a href="content.html" target="_blank">Content Page</a></li>
-</ul>
+<li>
+<a href="index.html" target="_blank">Splash Screen</a> |
+<a href="validation_ST2.html" target="_blank">Validation</a>
+</li>
 
-<p>
-These pages were designed to work together to create a complete and structured user experience. The splash screen introduces the website, the simulator provides interaction, and the content page offers supporting information related to health and wellbeing.
-</p>
+<li>
+<a href="simulator.html" target="_blank">Action Impact Simulator</a> |
+<a href="validation_ST2.html" target="_blank">Validation</a>
+</li>
+
+<li>
+<a href="content.html" target="_blank">Content Page</a> |
+<a href="validation_ST2.html" target="_blank">Validation</a>
+</li>
+</ul>
 </section>
 
 <section class="section" id="splash">
 <h2>Splash Screen</h2>
-
 <p>
-The splash screen was developed using standard HTML elements such as &lt;div&gt;, &lt;h1&gt;, and &lt;p&gt; to structure the content. A container element was used to group all components together, ensuring a consistent layout and alignment.
+The splash screen was built using HTML elements such as div, headings, and paragraphs. CSS was used to create a full-screen background image and overlay for readability.
 </p>
 
 <p>
-CSS was used to create a visually appealing full-screen background image using properties such as background-size: cover and background-position: center. An overlay with a semi-transparent background colour was added using rgba values to improve text readability against the background image.
-</p>
-
-<p>
-In terms of functionality, a meta refresh tag was used to automatically redirect the user to the home page after four seconds. Additionally, JavaScript was implemented to create a countdown timer and a “Skip Intro” button, allowing users to manually navigate to the next page if desired.
-</p>
-
-<p>
-These design and implementation choices were made to provide a smooth and professional introduction to the website while maintaining accessibility and usability.
+A meta refresh tag and JavaScript countdown were used to redirect the user and provide interaction.
 </p>
 </section>
 
@@ -102,19 +95,11 @@ These design and implementation choices were made to provide a smooth and profes
 <h2>Action Impact Simulator</h2>
 
 <p>
-The Action Impact Simulator is the main interactive feature of the website and was developed using a combination of HTML, CSS, and JavaScript. The structure of the page uses semantic HTML elements such as &lt;header&gt;, &lt;main&gt;, and &lt;div&gt; to organise content clearly and improve accessibility.
+The simulator was built using HTML structure with cards representing actions. CSS Grid was used to create a responsive layout and styling such as shadows and hover effects improved usability.
 </p>
 
 <p>
-Each action is presented as a card using div elements, which allows content to be grouped logically and styled consistently. CSS Grid was used to create a responsive layout, ensuring that the cards adjust to different screen sizes. Additional styling techniques such as box shadows, hover effects, and border radius were applied to enhance the user interface and provide visual feedback.
-</p>
-
-<p>
-JavaScript was used to implement all interactive functionality. Event handling was used to detect when a user selects an action, and the total score is updated dynamically. The use of classList ensures that each action can only be selected once, preventing errors in the score calculation.
-</p>
-
-<p>
-The simulator also includes a progress bar that updates based on the user’s score, providing a visual representation of progress. Furthermore, the background image changes dynamically depending on the user’s impact level (low, medium, or high), which enhances user engagement and reinforces feedback visually.
+JavaScript was used to handle interaction, update scores, prevent duplicate selections, and dynamically change the background image depending on the user’s impact level.
 </p>
 
 <p>
@@ -126,15 +111,7 @@ The simulator also includes a progress bar that updates based on the user’s sc
 <h2>Content Page</h2>
 
 <p>
-The content page was designed to provide informative and relevant information about health and wellbeing. Structured HTML elements such as &lt;section&gt;, &lt;h2&gt;, and &lt;p&gt; were used to organise the content into clear and readable sections.
-</p>
-
-<p>
-CSS was used to control layout, spacing, and typography. Consistent margins, font sizes, and colours were applied to ensure readability and visual consistency across the page. The design focuses on clarity, allowing users to easily understand the information presented.
-</p>
-
-<p>
-The content was also linked conceptually to the simulator, helping users understand how their choices in the simulator relate to real-life habits.
+The content page uses structured HTML elements such as sections and headings to organise information clearly. CSS was used to ensure consistent spacing, typography, and readability.
 </p>
 
 <p>
@@ -142,20 +119,11 @@ The content was also linked conceptually to the simulator, helping users underst
 </p>
 </section>
 
-<!-- ACCESSIBILITY -->
 <section class="section" id="accessibility">
 <h2>Accessibility Considerations</h2>
 
 <p>
-Accessibility was an important consideration during development. All images include alternative text (alt attributes) to support screen readers and assist visually impaired users. Semantic HTML elements such as &lt;header&gt;, &lt;nav&gt;, and &lt;main&gt; were used to improve page structure and navigation.
-</p>
-
-<p>
-Colour contrast was carefully chosen to ensure that text remains readable against backgrounds, particularly when using images. Interactive elements such as buttons and cards are clearly visible and easy to use, improving usability for all users.
-</p>
-
-<p>
-These accessibility features ensure that the website is inclusive and usable by a wide range of users.
+Accessibility was considered by using alt text for images and semantic HTML elements. Colour contrast and layout ensure readability, and interactive elements are clearly visible.
 </p>
 </section>
 
@@ -163,19 +131,10 @@ These accessibility features ensure that the website is inclusive and usable by 
 <h2>Compliance with JANET Regulations</h2>
 
 <p>
-The website complies with JANET regulations by ensuring that all content is appropriate, respectful, and suitable for an academic environment. No harmful, offensive, or misleading content is included.
-</p>
-
-<p>
-External resources such as images are used responsibly, and care has been taken to ensure that they are either royalty-free or used appropriately. Academic integrity has been maintained by ensuring that all work reflects personal understanding and effort.
-</p>
-
-<p>
-Additionally, the website does not collect or misuse personal data, ensuring that it follows responsible web publishing practices.
+The website follows JANET regulations by ensuring appropriate content and responsible use of external resources. No personal data is collected.
 </p>
 </section>
 
-<!-- MEETINGS -->
 <section class="section" id="meetings">
 <h2>Group Meetings and Contribution Log</h2>
 
@@ -188,45 +147,45 @@ Additionally, the website does not collect or misuse personal data, ensuring tha
 </tr>
 
 <tr>
-<td>Week 1</td>
+<td>Jan 20</td>
 <td>Face-to-face</td>
 <td>Assign roles</td>
-<td>Selected responsibility for simulator and splash screen</td>
+<td>Chose simulator responsibility</td>
 </tr>
 
 <tr>
-<td>Week 2</td>
+<td>Jan 27</td>
 <td>Online</td>
-<td>Discuss design</td>
-<td>Suggested layout and structure ideas</td>
+<td>Design ideas</td>
+<td>Suggested layout</td>
 </tr>
 
 <tr>
-<td>Week 3</td>
+<td>Feb 3</td>
 <td>Face-to-face</td>
 <td>Progress review</td>
-<td>Presented initial simulator version</td>
+<td>Showed simulator</td>
 </tr>
 
 <tr>
-<td>Week 4</td>
+<td>Feb 10</td>
 <td>Online</td>
-<td>Debugging</td>
-<td>Improved JavaScript logic</td>
+<td>Fix bugs</td>
+<td>Improved JavaScript</td>
 </tr>
 
 <tr>
-<td>Week 5</td>
+<td>Feb 17</td>
 <td>Face-to-face</td>
-<td>Design improvements</td>
-<td>Refined CSS styling</td>
+<td>Design updates</td>
+<td>Improved styling</td>
 </tr>
 
 <tr>
-<td>Week 6</td>
+<td>Feb 24</td>
 <td>Online</td>
-<td>Final testing</td>
-<td>Tested and fixed issues</td>
+<td>Final review</td>
+<td>Testing and fixes</td>
 </tr>
 
 </table>
@@ -236,16 +195,21 @@ Additionally, the website does not collect or misuse personal data, ensuring tha
 <h2>Reflection</h2>
 
 <p>
-This project allowed me to significantly improve my understanding of web development. I gained confidence in using HTML to structure pages, CSS to design layouts, and JavaScript to create interactive features.
+This project improved my understanding of HTML, CSS, and JavaScript. I developed problem-solving skills and gained confidence in creating interactive web features.
 </p>
+</section>
 
-<p>
-One of the key lessons I learned was the importance of planning and testing. I encountered challenges when working with JavaScript logic, but through debugging and problem-solving, I was able to resolve these issues effectively.
-</p>
+<section class="section" id="references">
+<h2>References</h2>
 
-<p>
-Overall, this project helped me develop both technical skills and teamwork skills, and I am satisfied with the final outcome.
-</p>
+<ul>
+<li>MDN Web Docs – HTML: https://developer.mozilla.org/en-US/docs/Web/HTML</li>
+<li>MDN Web Docs – CSS: https://developer.mozilla.org/en-US/docs/Web/CSS</li>
+<li>W3Schools: https://www.w3schools.com</li>
+<li>University Lecture Notes</li>
+<li>ChatGPT (used for support and debugging)</li>
+</ul>
+
 </section>
 
 <footer>
