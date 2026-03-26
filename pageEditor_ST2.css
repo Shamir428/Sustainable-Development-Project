@@ -5,9 +5,9 @@ box-sizing: border-box;
 }
 
 body {
-font-family: Arial, sans-serif;
+font-family: 'Segoe UI', Arial, sans-serif;
 background: #f4f4f4;
-line-height: 1.6;
+line-height: 1.7;
 }
 
 header {
@@ -20,16 +20,20 @@ text-align: center;
 .section {
 background: white;
 margin: 20px auto;
-padding: 20px;
+padding: 25px;
 width: 90%;
 max-width: 900px;
-border-radius: 10px;
-box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+border-radius: 12px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 h2 {
 margin-bottom: 10px;
 color: #111827;
+}
+
+p {
+margin-bottom: 15px;
 }
 
 a {
@@ -50,7 +54,6 @@ margin-top: 15px;
 th, td {
 border: 1px solid #ccc;
 padding: 10px;
-text-align: left;
 }
 
 th {
