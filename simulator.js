@@ -3,6 +3,13 @@ let total = 0;
 const LOW_MAX = 4;
 const MEDIUM_MAX = 8;
 
+function setBackground(image) {
+    document.body.style.backgroundImage = `url('${image}')`;
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundRepeat = "no-repeat";
+}
+
 function selectAction(element, points) {
 
     if (element.classList.contains("selected")) return;
@@ -23,23 +30,17 @@ function updateImpact() {
 
     if (total <= LOW_MAX) {
         message = "Low Impact – Try to improve your habits.";
-
-        document.body.style.backgroundImage = "url('img/low.jpg')";
-        document.body.style.backgroundSize = "cover";
+        setBackground("img/low.jpg");
     }
 
     else if (total <= MEDIUM_MAX) {
         message = "Medium Impact – You're on the right track.";
-
-        document.body.style.backgroundImage = "url('img/medium.jpg')";
-        document.body.style.backgroundSize = "cover";
+        setBackground("img/medium.jpg");
     }
 
     else {
         message = "High Impact – Excellent healthy lifestyle!";
-
-        document.body.style.backgroundImage = "url('img/high.jpg')";
-        document.body.style.backgroundSize = "cover";
+        setBackground("img/high.jpg");
     }
 
     document.getElementById("impact").innerText = message;
