@@ -4,132 +4,288 @@
     <meta charset="UTF-8">
     <title>Page Editor</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ===== PAGE EDITOR STYLING ===== */
+
+        main.container {
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            margin-top: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        th {
+            background: #f0f0f0;
+        }
+    </style>
 </head>
 
 <body>
-    <header><div class="container header-container">
-            <!-- Website logo / identity -->
-            <div class="logo">
-                <img src="images/logo.png" alt="Health and wellbeing logo">
-                <h1>Health & Wellbeing</h1>
-            </div>
-            <!-- Shared navigation: only update the active class per page -->
-         <nav>    <ul class="nav-links">
-    <li><a href="home.html">Home</a></li>
-    <li><a href="simulator.html">Action Impact Simulator</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="profile.html">User Profile</a></li>
-    <li><a href="feedback.html">Feedback</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="sitemap.html">Sitemap</a></li>
-</ul>
-</nav>
-        </div></header>
+
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Health and wellbeing logo">
+            <h1>Health & Wellbeing</h1>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="simulator.html">Action Impact Simulator</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
 
 <h1>Page Editor</h1>
 
-<!-- ===== INTRO ===== -->
-<h2>Student Details</h2>
-<p><strong>Name:</strong> Shamir Zeeshan</p>
-<p><strong>Role:</strong> Student 1 – Template, Home Page, Gallery</p>
+<!-- ===== STUDENT DETAILS ===== -->
+<section>
+    <h2>Student Details</h2>
+    <p><strong>Name:</strong> Shamir Zeeshan</p>
+    <p><strong>Role:</strong> Student 1 – Template, Home Page, Gallery</p>
+</section>
 
-<h2>Completed Tasks</h2>
-<ul>
-    <li>Created website template</li>
-    <li>Developed global CSS</li>
-    <li>Designed Home Page</li>
-    <li>Implemented Gallery Page</li>
-</ul>
+<!-- ===== TASKS ===== -->
+<section>
+    <h2>Completed Tasks</h2>
+    <ul>
+        <li>Designed and implemented the shared website template</li>
+        <li>Created and structured the global CSS file</li>
+        <li>Developed the Home Page layout and content</li>
+        <li>Built the interactive Gallery Page using JavaScript</li>
+    </ul>
+</section>
 
-<!-- ===== NAV ===== -->
-<h2>Contents</h2>
-<ul>
-    <li><a href="#home">Home Page</a></li>
-    <li><a href="#gallery">Gallery Page</a></li>
-    <li><a href="#challenges">Challenges</a></li>
-    <li><a href="#accessibility">Accessibility</a></li>
-</ul>
+<!-- ===== CONTENTS ===== -->
+<section>
+    <h2>Contents</h2>
+    <ul>
+        <li><a href="#home">Home Page</a></li>
+        <li><a href="#gallery">Gallery Page</a></li>
+        <li><a href="#challenges">Challenges</a></li>
+        <li><a href="#accessibility">Accessibility</a></li>
+    </ul>
+</section>
 
 <!-- ===== HOME PAGE ===== -->
-<h2 id="home">Home Page</h2>
+<section id="home">
+    <h2>Home Page</h2>
 
-<p><strong>Link:</strong> <a href="home.html" target="_blank">View Home Page</a></p>
+    <p><strong>Link:</strong> 
+        <a href="home.html" target="_blank">View Home Page</a>
+    </p>
 
-<h3>HTML Structure</h3>
-<p>The home page uses semantic elements such as header, main, and section to organise content clearly.</p>
+    <h3>HTML Structure</h3>
+    <p>
+        The Home Page was built using semantic HTML elements such as 
+        <strong>&lt;header&gt;</strong>, <strong>&lt;main&gt;</strong>, and 
+        <strong>&lt;section&gt;</strong> to clearly organise content. Each section was 
+        structured to separate the introduction, card-based content, and gallery area.
+    </p>
 
-<h3>CSS Techniques</h3>
-<p>Flexbox was used for navigation alignment, and card styles were used for content sections.</p>
+    <h3>CSS Techniques</h3>
+    <p>
+        Flexbox was used to align the navigation bar and ensure it remains responsive 
+        across different screen sizes. A reusable card design was created using the global CSS 
+        to maintain consistency across all pages. Hover effects were added to improve 
+        interactivity and visual feedback.
+    </p>
 
-<h3>Design Decisions</h3>
-<p>A card-based layout was chosen to improve readability and structure.</p>
+    <h3>Design and Implementation Decisions</h3>
+    <p>
+        A card-based layout was chosen to present information in a clear and structured way. 
+        This improves readability and allows users to quickly understand key points. 
+        The colour scheme was kept consistent with the global CSS to maintain a unified 
+        visual identity across the website.
+    </p>
+</section>
 
-<!-- ===== GALLERY ===== -->
-<h2 id="gallery">Gallery Page</h2>
+<!-- ===== GALLERY PAGE ===== -->
+<section id="gallery">
+    <h2>Gallery Page</h2>
 
-<p><strong>Link:</strong> <a href="gallery.html" target="_blank">View Gallery</a></p>
+    <p><strong>Link:</strong> 
+        <a href="gallery.html" target="_blank">View Gallery</a>
+    </p>
 
-<h3>HTML Structure</h3>
-<p>The gallery uses a grid layout to display images with titles.</p>
+    <h3>HTML Structure</h3>
+    <p>
+        The Gallery Page was structured using a grid layout to display multiple images 
+        in an organised and responsive way. Each gallery item contains an image and 
+        descriptive text related to the SDG theme.
+    </p>
 
-<h3>CSS Techniques</h3>
-<p>CSS Grid was used to create a responsive layout, and hover effects improve interactivity.</p>
+    <h3>CSS Techniques</h3>
+    <p>
+        CSS Grid was used to create a flexible and responsive gallery layout. 
+        Additional styling such as hover effects and spacing were applied to make 
+        the gallery visually engaging and easy to navigate.
+    </p>
 
-<h3>JavaScript Functionality</h3>
-<p>JavaScript was used to open a modal when images are clicked and allow users to close it.</p>
+    <h3>JavaScript Functionality</h3>
+    <p>
+        JavaScript was used to implement interactivity. When a user clicks on an image, 
+        an extended view (modal) is displayed showing a larger version of the image and 
+        additional information. Users can also close this view, improving usability.
+    </p>
 
-<h3>Design Decisions</h3>
-<p>A modal view was used to display additional information without leaving the page.</p>
+    <h3>Design Decisions</h3>
+    <p>
+        A modal design was used to display extended content without redirecting users 
+        to another page. This improves user experience by keeping navigation simple 
+        and intuitive.
+    </p>
+</section>
 
 <!-- ===== CHALLENGES ===== -->
-<h2 id="challenges">Challenges and Solutions</h2>
+<section id="challenges">
+    <h2>Challenges and Solutions</h2>
 
-<p>One challenge was aligning the navigation bar. This was solved using Flexbox.</p>
-<p>Another issue was the gallery appearing empty, which was fixed by adjusting grid layout and spacing.</p>
+    <p>
+        One challenge was aligning the navigation bar correctly across all pages. 
+        This was resolved by using Flexbox and adjusting spacing within the header.
+    </p>
+
+    <p>
+        Another issue was the gallery initially appearing empty or poorly spaced. 
+        This was fixed by properly configuring the grid layout and ensuring images 
+        had correct sizing and margins.
+    </p>
+
+    <p>
+        I also faced difficulties maintaining consistent styling across pages, 
+        which was solved by refining the global CSS and reusing shared classes.
+    </p>
+</section>
 
 <!-- ===== ACCESSIBILITY ===== -->
-<h2 id="accessibility">Accessibility</h2>
+<section id="accessibility">
+    <h2>Accessibility Considerations</h2>
 
-<p>Alt text was added to all images. Semantic HTML was used to improve structure. Focus styles were added for keyboard users.</p>
+    <p>
+        Accessibility was considered throughout development by using semantic HTML 
+        elements to improve structure and readability for assistive technologies.
+    </p>
+
+    <p>
+        All images include descriptive alt text to support users who rely on screen readers. 
+        Additionally, focus styles were implemented to allow keyboard navigation.
+    </p>
+
+    <p>
+        Colour contrast was also considered to ensure text is readable against 
+        background colours.
+    </p>
+</section>
 
 <!-- ===== COMPLIANCE ===== -->
-<h2>Compliance with JANET</h2>
+<section>
+    <h2>Compliance with JANET Regulations</h2>
 
-<p>All content is appropriate and images are royalty-free. Sources are referenced properly.</p>
+    <p>
+        All content included in the website is appropriate and relevant to the 
+        chosen SDG. External images were sourced from royalty-free platforms and 
+        are properly referenced.
+    </p>
 
-<!-- ===== MEETINGS ===== -->
-<h2>Meeting Log</h2>
+    <p>
+        The website avoids plagiarism by ensuring all written content is original. 
+        The design and implementation follow good web development practices and 
+        maintain a professional standard.
+    </p>
+</section>
 
-<table border="1">
-<tr>
-    <th>Date</th>
-    <th>Format</th>
-    <th>Objective</th>
-    <th>My Contribution</th>
-</tr>
+<!-- ===== MEETING LOG ===== -->
+<section>
+    <h2>Meeting Log</h2>
 
-<tr>
-    <td>23 Nov</td>
-    <td>Face-to-face</td>
-    <td>Assign roles</td>
-    <td>Chose to do Home Page and Template</td>
-</tr>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Format</th>
+            <th>Objective</th>
+            <th>My Contribution</th>
+        </tr>
 
-<tr>
-    <td>30 Nov</td>
-    <td>Online</td>
-    <td>Design discussion</td>
-    <td>Suggested layout and colours</td>
-</tr>
+        <tr>
+            <td>27th Feb</td>
+            <td>Face-to-face</td>
+            <td>Assign roles</td>
+            <td>Chose responsibility for Home Page and template</td>
+        </tr>
 
-</table>
+        <tr>
+            <td>2nd Mar</td>
+            <td>Online</td>
+            <td>Design discussion</td>
+            <td>Suggested layout structure and colour palette</td>
+        </tr>
+
+        <tr>
+            <td>7th Mar</td>
+            <td>Hybrid</td>
+            <td>Progress review</td>
+            <td>Shared progress on CSS and homepage design</td>
+        </tr>
+    </table>
+</section>
 
 <!-- ===== REFERENCES ===== -->
-<h2>References</h2>
-<ul>
-    <li>W3Schools</li>
-    <li>MDN Web Docs</li>
-</ul>
+<section>
+    <h2>References</h2>
+    <ul>
+        <li>W3Schools – HTML & CSS Tutorials</li>
+        <li>MDN Web Docs – Layout and Accessibility</li>
+        <li>University of Wesminster Lecture Notes</li>
+    </ul>
+</section>
+
+</main>
 
 </body>
 </html>
