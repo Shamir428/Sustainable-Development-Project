@@ -6,198 +6,229 @@
 
 <title>Page Editor - Alex Seciu</title>
 
+<link rel="stylesheet" href="pageEditor_ST2.css">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="content_ST2.css">
 </head>
 
 <body>
 
 <header>
-    <div class="container header-container">
-            <!-- Website logo / identity -->
+    <header>
+        <div class="container header-container">
             <div class="logo">
-                <img src="images/logo.png" alt="Health and wellbeing logo">
-                <h1>Health & Wellbeing</h1>
+                <img src="img/logo.png" alt="Healthy Habits logo">
+                <span>Healthy Habits</span>
             </div>
-            <!-- Shared navigation: only update the active class per page -->
-         <nav>    <ul class="nav-links">
-    <li><a href="home.html">Home</a></li>
-    <li><a href="simulator.html">Action Impact Simulator</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="profile.html">User Profile</a></li>
-    <li><a href="feedback.html">Feedback</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="sitemap.html">Sitemap</a></li>
-</ul>
-</nav>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="simulator.html">Action Impact Simulator</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+    <div class="header-container">
+        <h1>Page Editor - Alex Seciu</h1>
+    </div>
 </header>
 
-<h1>Page Editor - Alex Seciu</h1>
-
-<div class="section">
-<h2>My Role in the Project</h2>
-<p>
-In this group coursework, I was mainly responsible for building the more interactive and user-focused parts of the website. I focused on making sure that the website was not just informative, but also engaging for users. My main contribution was the Action Impact Simulator, along with creating the splash screen and the content page.
-</p>
-
-<p>
-I tried to make my sections stand out by adding functionality and making sure the user actually interacts with the website rather than just reading information.
-</p>
-</div>
-
-<div class="section">
-<h2>Pages I Developed</h2>
+<!-- CONTENTS -->
+<section class="section">
+<h2>Contents</h2>
 <ul>
-<li>Splash Screen (index.html)</li>
-<li>Action Impact Simulator (simulator.html)</li>
-<li>Content Page (content.html)</li>
-<li>Page Editor (this page)</li>
+<li><a href="#role">My Role</a></li>
+<li><a href="#pages">Pages Developed</a></li>
+<li><a href="#splash">Splash Screen</a></li>
+<li><a href="#simulator">Simulator</a></li>
+<li><a href="#content">Content Page</a></li>
+<li><a href="#accessibility">Accessibility</a></li>
+<li><a href="#compliance">Compliance</a></li>
+<li><a href="#meetings">Meetings</a></li>
+<li><a href="#reflection">Reflection</a></li>
 </ul>
+</section>
+
+<!-- ROLE -->
+<section class="section" id="role">
+<h2>Student Name and Role</h2>
+<p><strong>Alex Seciu</strong></p>
+<p>
+My role in the group was to develop the interactive components of the website, including the Splash Screen, Action Impact Simulator, and Content Page.
+</p>
+</section>
+
+<!-- PAGES -->
+<section class="section" id="pages">
+<h2>Completed Pages</h2>
+<ul>
+<li><a href="index.html" target="_blank">Splash Screen</a></li>
+<li><a href="simulator.html" target="_blank">Simulator</a></li>
+<li><a href="content.html" target="_blank">Content Page</a></li>
+</ul>
+</section>
+
+<!-- SPLASH -->
+<section class="section" id="splash">
+<h2>Splash Screen</h2>
 
 <p>
-All of these pages were designed to work together and give the website a clear structure. The splash screen acts as an introduction, the home page provides an overview, and the simulator and content page give more depth to the topic.
-</p>
-</div>
-
-<div class="section">
-<h2>Splash Screen Implementation</h2>
-<p>
-For the splash screen, I wanted something simple but effective. I created a page that loads first and then automatically redirects the user to the main home page after a few seconds.
+The splash screen was built using HTML elements such as &lt;div&gt;, &lt;h1&gt;, and &lt;p&gt; to structure the content.
 </p>
 
 <p>
-At first, I wasn’t fully sure how to do the automatic redirection, but I learned how to use a meta refresh tag to make it work. Once I understood that, it became straightforward.
+CSS was used to create a full-screen background image using background-size: cover and background-position: center. An overlay was applied to improve text readability.
 </p>
 
 <p>
-Even though the splash screen is a small feature, I understand that it improves the overall user experience by giving a proper entry point into the website.
+A meta refresh tag was used to automatically redirect users after 4 seconds. JavaScript was also used to implement a countdown timer and a skip button.
 </p>
-</div>
 
-<div class="section">
+</section>
+
+<!-- SIMULATOR -->
+<section class="section" id="simulator">
 <h2>Action Impact Simulator</h2>
+
 <p>
-The Action Impact Simulator is the main feature I worked on and probably the most important part of my contribution. The idea behind it is to allow users to select different healthy actions and see how those choices affect their overall lifestyle score.
+The simulator uses semantic HTML elements such as &lt;header&gt;, &lt;main&gt;, and &lt;div&gt; to structure the page. Each action is displayed as a card.
 </p>
 
 <p>
-Each action is displayed as a card, and when the user clicks on a card, JavaScript is used to update the score. I made sure that each action could only be selected once, which required checking whether a card had already been clicked.
-</p>
-
-<ul>
-<li>The score increases based on the selected actions</li>
-<li>The same action cannot be selected multiple times</li>
-<li>The score updates instantly on the screen</li>
-<li>A message is displayed depending on the user’s total score</li>
-</ul>
-
-<p>
-I also added a progress bar to make the simulator feel more interactive and visual. This shows the user how close they are to having a “healthy lifestyle” score.
+CSS Grid was used to arrange the cards responsively. Styling techniques such as hover effects, shadows, and spacing improve usability and visual design.
 </p>
 
 <p>
-Additionally, I implemented a reset button so users can restart the simulation and try different combinations of actions. I felt this was important because it allows users to experiment and better understand the impact of their choices.
-</p>
-</div>
-
-<div class="section">
-<h2>Content Page Development</h2>
-<p>
-The content page was created to provide useful information about health and well-being. I made sure that the content was clear, structured, and easy to read.
+JavaScript was used to handle interactivity, including updating scores, preventing duplicate selections, and dynamically changing the background based on user impact level.
 </p>
 
 <p>
-Instead of just listing information, I tried to explain why health is important and how students are affected by poor habits such as lack of sleep, stress, and unhealthy eating.
+<a href="simulator.html" target="_blank">View Simulator</a>
+</p>
+
+</section>
+
+<!-- CONTENT -->
+<section class="section" id="content">
+<h2>Content Page</h2>
+
+<p>
+The content page uses structured HTML elements such as &lt;section&gt; and &lt;p&gt; to organise information clearly.
 </p>
 
 <p>
-I also linked the ideas in the content page to the simulator so that users can see how the information connects to the interactive feature. This makes the website feel more complete and meaningful.
-</p>
-</div>
-
-<div class="section">
-<h2>Challenges and Solutions</h2>
-<p>
-One of the biggest challenges I faced was working with JavaScript, especially when trying to control how the cards behave when clicked. At the beginning, I had issues where users could click the same card multiple times, which would incorrectly increase the score.
+CSS was used to ensure consistent spacing, readable typography, and a clean layout.
 </p>
 
 <p>
-To solve this, I used classList to check whether a card was already selected. This allowed me to stop duplicate clicks and made the simulator work properly.
+<a href="content.html" target="_blank">View Content Page</a>
+</p>
+
+</section>
+
+<!-- ACCESSIBILITY -->
+<section class="section" id="accessibility">
+<h2>Accessibility</h2>
+
+<p>
+All images include alt text to support screen readers. Semantic HTML improves navigation and structure.
 </p>
 
 <p>
-Another challenge was improving the design. My first version looked very basic and did not look like a proper website. I improved this by using CSS features such as grid layouts, spacing, shadows, and hover effects to make it look more modern and professional.
-</p>
-</div>
-
-<div class="section">
-<h2>Design Decisions</h2>
-<p>
-I chose a green colour theme because it is commonly associated with health, positivity, and growth. I wanted the design to match the theme of the website.
+Colour contrast and layout ensure readability, and interactive elements are clearly visible.
 </p>
 
-<p>
-I also used card layouts throughout the site because they help organise content clearly and make it easier for users to understand information quickly.
-</p>
+</section>
+
+<!-- COMPLIANCE -->
+<section class="section" id="compliance">
+<h2>Compliance with JANET</h2>
 
 <p>
-Consistency was important to me, so I made sure that the simulator, content page, and home page all follow a similar design style.
+The website follows ethical standards by ensuring all content is appropriate and respectful.
 </p>
-</div>
 
-<div class="section">
+<p>
+External resources are used responsibly, and no personal data is collected.
+</p>
+
+</section>
+
+<!-- MEETINGS -->
+<section class="section" id="meetings">
+<h2>Group Meetings</h2>
+
+<table>
+<tr>
+<th>Date</th>
+<th>Format</th>
+<th>Objective</th>
+<th>Contribution</th>
+</tr>
+
+<tr>
+<td>Week 1</td>
+<td>Face-to-face</td>
+<td>Assign roles</td>
+<td>Chose simulator task</td>
+</tr>
+
+<tr>
+<td>Week 2</td>
+<td>Online</td>
+<td>Design ideas</td>
+<td>Suggested card layout</td>
+</tr>
+
+<tr>
+<td>Week 3</td>
+<td>Face-to-face</td>
+<td>Progress review</td>
+<td>Presented simulator</td>
+</tr>
+
+<tr>
+<td>Week 4</td>
+<td>Online</td>
+<td>Fix issues</td>
+<td>Improved JS logic</td>
+</tr>
+
+<tr>
+<td>Week 5</td>
+<td>Face-to-face</td>
+<td>Final design</td>
+<td>Updated styling</td>
+</tr>
+
+<tr>
+<td>Week 6</td>
+<td>Online</td>
+<td>Final checks</td>
+<td>Testing and fixes</td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- REFLECTION -->
+<section class="section" id="reflection">
 <h2>Reflection</h2>
-<p>
-Overall, this project helped me improve both my technical skills and my understanding of how to build a complete website. I became more confident using JavaScript to create interactive features and learned how to structure pages properly using HTML and CSS.
-</p>
 
 <p>
-I also improved my problem-solving skills by debugging issues and testing different solutions until everything worked correctly.
+This project improved my understanding of HTML, CSS, and JavaScript. I learned how to build interactive features and structure pages effectively.
 </p>
 
-<p>
-If I had more time, I would improve the design even further and possibly add more advanced features, but overall I am happy with what I have created.
-</p>
-</div>
-
-<div class="section">
-<h2>References</h2>
-
-<p>
-Throughout this project, I used a range of resources to support my understanding and development of the website.
-</p>
-
-<ul>
-<li>
-<strong>Lecture Notes:</strong> These were used as the main foundation for understanding HTML, CSS, and JavaScript concepts taught during the course. They helped guide the structure of the website and ensured I followed the correct practices expected for the assignment.
-</li>
-
-<li>
-<strong>Online Resources:</strong> I used various websites such as W3Schools and MDN Web Docs to better understand specific coding concepts, including JavaScript functions, CSS layouts, and responsive design techniques.
-</li>
-
-<li>
-<strong>ChatGPT:</strong> I used ChatGPT as a support tool to help troubleshoot issues, improve my code structure, and get ideas for improving design and functionality. It was especially useful when working on JavaScript logic and refining the user interface.
-</li>
-
-<li>
-<strong>General Internet Research:</strong> I researched general information about healthy habits to ensure that the content presented on the website was accurate and relevant to the topic of health and wellbeing.
-</li>
-</ul>
-
-<p>
-All sources were used to support my learning and improve the overall quality of the project, while still ensuring that the final work reflects my own understanding and implementation.
-</p>
-</div>
+</section>
 
 <footer>
-        <p> Alex Seciu | w2142671
-            <br>
-            <a href="pageEditor_ST2.html">Page editor </a> |
-            <a href="validation_ST2.html">Validation</a>
-        </p>
-    </footer>
+<p>Alex Seciu | w2142671</p>
+</footer>
 
 </body>
 </html>
