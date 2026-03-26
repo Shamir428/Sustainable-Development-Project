@@ -1,3 +1,15 @@
-.page-intro h1 {
+.page-intro {
     text-align: center;
+}
+
+.page-intro h1 {
+    margin-bottom: 0.5em;
+}
+
+.cards {
+    display: grid;
+}
+
+.cards img {
+    width: 10%;
 }
