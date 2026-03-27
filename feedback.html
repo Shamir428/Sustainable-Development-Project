@@ -12,8 +12,8 @@
     <header>
       <div class="container header-container">
         <div class="logo">
-          <img src="img/logo.png" alt="Health and wellbeing logo" />
-          <h1>Health & Wellbeing</h1>
+          <img src="img/healthwellbeing.jpg" alt="Health and wellbeing logo" />
+          <span>Health & Wellbeing</span>
         </div>
         <nav>
           <ul class="nav-links">
@@ -46,10 +46,12 @@
         </p>
         <div class="filter-bar">
           <label for="programme-filter">Sort by: </label>
-          <option>Most Relevant</option>
-          <option>Mental Wellbeing</option>
-          <option>Physical Health</option>
-          <option>Support Services</option>
+          <select id="programme-filter" name="programme-filter">
+            <option>Most Relevant</option>
+            <option>Mental Wellbeing</option>
+            <option>Physical Health</option>
+            <option>Support Services</option>
+          </select>
         </div>
         <div class="programmes-grid">
           <article class="programme-card">
@@ -62,7 +64,7 @@
               Registering with a GP gives students access to check-ups, prescriptions, medical
               advice, referrals, and ongoing support while living from home.
             </p>
-            <a href="#">Learn more</a>
+            <a href="#" class="card-btn">Learn More</a>
           </article>
           <article class="programme-card">
             <h3>Counselling and mental health support</h3>
@@ -75,14 +77,14 @@
               concerns through counselling and wellbeing services. Getting help early can make
               problems feel more manageable and reduce their impact on study and daily life.
             </p>
-            <button href="#">Learn more</button>
+            <a href="#" class="card-btn">Learn More</a>
           </article>
           <article class="programme-card">
+            <h3>Sexual Health Support</h3>
             <img
               src="img/feedback/sexual-health.jpg"
               alt="Doctor providing confidential health advice during a clinic consultation"
             />
-            <h3>Sexual Health Support</h3>
             <p>
               Sexual health services give students a private place to get advice, testing and
               information about protection and staying safe. Using them early can help you get clear
@@ -99,7 +101,7 @@
             <p>
               Vaccines, health advice, and small everyday actions can help students avoid getting
               ill and stop illness spreading to others. This is especially important in shared
-              spaces like student accommodation and around campus
+              spaces like student accommodation and around campus.
             </p>
             <a href="#" class="card-btn">Learn More</a>
           </article>
