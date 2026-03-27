@@ -26,3 +26,20 @@
   overflow: hidden;
   padding-bottom: 1rem;
 }
+
+.programme-card h3,
+.programme-card p,
+.programme-card .card-btn {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.programme-card h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.programme-card p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
