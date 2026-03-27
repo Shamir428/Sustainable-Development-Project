@@ -1,16 +1,16 @@
 .page-intro {
-    text-align: center;
+  text-align: center;
 }
 
 .page-intro h1 {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .programmes-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .programmes-grid img {
-    width: 40%;
+  width: 40%;
 }
