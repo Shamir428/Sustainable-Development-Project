@@ -13,8 +13,6 @@
   max-height: 55vh; /* Limit grid section for programme cards with max height of 50% of the viewport height (browser's visible window area) */
   overflow-y: auto; /* Make content stay inside the grid's max-height, if it becomes taller, then it adds a vertical scrollbar so the rest of the content can be scrolled */ 
   overflow-x: hidden;
-  
-  * Shows vertical scrollbar only if content exceeds the element's height */
 }
 
 .programme-card {
