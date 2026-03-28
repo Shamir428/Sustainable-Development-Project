@@ -134,6 +134,17 @@ li {
 }
 
 /* ===== CARDS ===== */
+.card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
 
 /* ===== IMAGES ===== */
 img {
