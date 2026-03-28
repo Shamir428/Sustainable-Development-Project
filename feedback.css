@@ -8,38 +8,69 @@
 
 .programmes-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 1.5em;
+  max-height: 55vh; /* Limit grid section for programme cards with max height of 50% of the viewport height (browser's visible window area) */
+  overflow-y: auto; /* Make content stay inside the grid's max-height, if it becomes taller, then it adds a vertical scrollbar so the rest of the content can be scrolled */ 
+  overflow-x: hidden;
+  
+  * Shows vertical scrollbar only if content exceeds the element's height */
+}
+
+.programme-card {
+  background-color: #e6f2ff;
+  border: 1px solid #cfe4ff;
+  border-radius: 12px; 
+  /* Add padding to card so there is more space between the content inside card and border, so image and text don't touch the edge of card.
+  This was better than using horizontal margins because I would've needed to add horizontal margins and specifically select each child element in the card such as p, img, h3 
+  And also the global css already styles all elements to have border-box box sizing, so that the padding itself accounts to entire width of elements, so the cards don't over their layouts and stick out more than the feedback page
+  */
+  padding: 1em; 
 }
 
 .programme-card img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* Makes images span the card */
+  margin: 0.75em 0;
+  object-fit: cover; /* This CSS property styles how the image content itself is fitted inside the img element box, in this case, the css value scale the image (but keep the original proportions) so the whole img box is covered */
+}
+
+.programme-btn {
+  background-color: #BDB76B;
+  margin: 0 auto;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: 0 auto;
   display: block;
 }
 
-.programme-card {
-  background-color: #fff;
-  border: 1px solid #d9d9d9;
-  border-radius: 12px;
-  overflow: hidden;
-  padding-bottom: 1rem;
+.programme-btn:hover {
+  background-color: #2E8B57;
+  transition: 0.3s;
+  border-radius: 7px;
 }
 
-.programme-card h3,
-.programme-card p,
-.programme-card .card-btn {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.filter-bar label {
+  font-weight: 600;
+  color: #008B8B;
 }
 
-.programme-card h3 {
-  margin-top: 1rem;
-  margin-bottom: 0.75rem;
+.filter-bar select {
+  border: 1.75px solid #475569;
+  border-radius: 6px;
+  padding: 0.25em 0;
+  text-align: center;
+  color: #1f2937;
 }
 
-.programme-card p {
-  margin-bottom: 1rem;
-  line-height: 1.5;
+.filter-bar {
+  text-align: right;
+  margin-bottom: 10px;
+  padding: 0.75em 1em;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-left: 5px solid #10b981;
+  border-radius: 10px;
 }
+
+
