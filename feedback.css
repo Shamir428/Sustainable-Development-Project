@@ -50,16 +50,27 @@
   border-radius: 7px;
 }
 
+.filter-bar label {
+  font-weight: 600;
+  color: #008B8B;
+}
+
 .filter-bar select {
-	border: 1.75px solid black;
-	border-radius: 5px;
-	padding: 0.15em 0.075em;
-	text-align: center;
+  border: 1.75px solid #475569;
+  border-radius: 6px;
+  padding: 0.25em 0;
+  text-align: center;
+  color: #1f2937;
 }
 
 .filter-bar {
   text-align: right;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  padding: 0.75em 1em;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-left: 5px solid #10b981;
+  border-radius: 10px;
 }
 
 
