@@ -15,22 +15,17 @@
 .programme-card {
   background-color: #e6f2ff;
   border: 1px solid #cfe4ff;
-  border-radius: 12px;
-  padding: 0 1em;
+  border-radius: 12px; 
+  /* Add padding to card so there is more space between the content inside card and border, so image and text don't touch the edge of card.
+  This was better than using horizontal margins because I would've needed to add horizontal margins and specifically select each child element in the card such as p, img, h3 
+  And also the global css already styles all elements to have border-box box sizing, so that the padding itself accounts to entire width of elements, so the cards don't over their layouts and stick out more than the feedback page
+  */
+  padding: 1em; 
 }
 
 .programme-card img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* This CSS property styles how the image content itself is fitted inside the img element box, in this case, scale the image but keep the original proportions so the whole img box is covered */
-}
-
-.programme-card h3 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.programme-card p {
-  margin-bottom: 1rem;
-  margin-top: 0.25em;
+  margin: 0.75em 0;
+  object-fit: cover; /* This CSS property styles how the image content itself is fitted inside the img element box, in this case, the css value scale the image (but keep the original proportions) so the whole img box is covered */
 }
