@@ -10,6 +10,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
   gap: 1.5em;
+  max-height: 55vh; /* Limit grid section for programme cards with max height of 50% of the viewport height (browser's visible window area) */
+  overflow-y: auto; /* Make content stay inside the grid's max-height, if it becomes taller, then it adds a vertical scrollbar so the rest of the content can be scrolled */ 
+  overflow-x: hidden;
+  
+  * Shows vertical scrollbar only if content exceeds the element's height */
 }
 
 .programme-card {
@@ -29,3 +34,32 @@
   margin: 0.75em 0;
   object-fit: cover; /* This CSS property styles how the image content itself is fitted inside the img element box, in this case, the css value scale the image (but keep the original proportions) so the whole img box is covered */
 }
+
+.programme-btn {
+  background-color: #BDB76B;
+  margin: 0 auto;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: 0 auto;
+  display: block;
+}
+
+.programme-btn:hover {
+  background-color: #2E8B57;
+  transition: 0.3s;
+  border-radius: 7px;
+}
+
+.filter-bar select {
+	border: 1.75px solid black;
+	border-radius: 5px;
+	padding: 0.15em 0.075em;
+	text-align: center;
+}
+
+.filter-bar {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+
