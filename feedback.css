@@ -12,34 +12,25 @@
   gap: 1.5em;
 }
 
+.programme-card {
+  background-color: #e6f2ff;
+  border: 1px solid #cfe4ff;
+  border-radius: 12px;
+  padding: 0 1em;
+}
+
 .programme-card img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* Makes images span the card */
-  display: block;
-}
-
-.programme-card {
-  background-color: #fff;
-  border: 1px solid #d9d9d9;
-  border-radius: 12px;
-  overflow: hidden;
-  padding-bottom: 1rem;
-}
-
-.programme-card h3,
-.programme-card p,
-.programme-card .card-btn {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  object-fit: cover; /* This CSS property styles how the image content itself is fitted inside the img element box, in this case, scale the image but keep the original proportions so the whole img box is covered */
 }
 
 .programme-card h3 {
   margin-top: 1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .programme-card p {
   margin-bottom: 1rem;
-  line-height: 1.5;
+  margin-top: 0.25em;
 }
