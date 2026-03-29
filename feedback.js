@@ -1,13 +1,12 @@
 
+let feedback = document.getElementById("feedback");
 
-let charCountText = document.getElementById("remaining-chars").textContent;
+let charCounter = document.getElementById("remaining-chars");
 
-let messageText = document.getElementById("feedback-message").value;
-
-let charCount = messageText.length;
-
-
-console.log(charCount);
-console.log(messageText);
+feedback.addEventListener("input", function() {
+	let feedbackText = feedback.value;
+	let length = feedbackText.length;
+	charCounter.textContent = length;
+});
 
 
