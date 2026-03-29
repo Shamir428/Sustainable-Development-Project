@@ -112,7 +112,7 @@
 
 .total-reviews {
   color: #666;
-  line-height: 0.6; /* Reduce line-height because had too much and uneven vertical spacing between the ratings text and border compared to numeric rating text */
+  line-height: 0.6; /* Reduce line-height because the text created too much and uneven vertical spacing between the ratings text and border compared to numeric rating text */
 }
 
 .individual-reviews {
@@ -125,8 +125,7 @@
   background-color: #eef7f1;
   border: 1px solid #dbe7df;
   border-radius: 15px;
-  margin: 0 auto;
-  padding: 1em 1em;
+  padding: 1em;
   text-align: center;
 }
 
@@ -145,6 +144,8 @@
   background-color: #e8f5ee;
   border-radius: 15px;
   gap: 1em;
+  background-color: #ffffff;
+  border: 1px solid #cfe8d7;
 }
 
 #feedback-form fieldset {
@@ -162,8 +163,9 @@
 }
 
 #feedback-form legend {
-  margin-bottom: 0.5em;
   text-align: center;
+  font-weight: 700;
+  color: #166534;
 }
 
 .feedback-form-section {
@@ -174,15 +176,18 @@
 #feedback-form input, 
 #feedback-form textarea, 
 #feedback-form select {
-	width: 100%;
-	margin: 0.8em 0;
+  width: 100%;
+  margin: 0.8em 0;
+  padding: 0.75em;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: white;
+  color: #1f2937;
 }
 
-.feedback-details p{
-  text-align: left;
+.feedback-details p {
   color: #6B7280;
 }
-
 
 .programmes-section,
 .reviews-summary,
@@ -191,3 +196,13 @@
   margin-bottom: 2em;
   padding: 1em;
 }
+
+.submit-btn {
+  background-color: #10b981;
+  margin: 0 auto;
+}
+
+.submit-btn:hover {
+  background-color: #059669;
+}
+
