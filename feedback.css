@@ -67,8 +67,17 @@
   padding: 0.75em 1em;
   background-color: #f3f4f6;
   border: 1px solid #d1d5db;
-  border-left: 5px solid #10b981;
   border-radius: 10px;
+}
+
+.programmes-section {
+  background-color: #f7fbff;
+  border: 1px solid #dbeafe;
+}
+
+.reviews-summary {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
 }
 
 .reviews-summary h2 {
@@ -115,7 +124,7 @@
 }
 
 .review-card {
-  background-color: #f7fbf8;
+  background-color: #eef7f1;
   border: 1px solid #dbe7df;
   border-radius: 15px;
   margin: 0 auto;
@@ -127,10 +136,16 @@
   margin-bottom: 1em;
 }
 
-#feedback-form fieldset {
-  margin: 1em auto;
-  text-align: center;
+.reviews-summary {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+}
 
+#feedback-form fieldset {
+  margin: 0.2em auto;
+  border: 2px solid #b7c9bd;
+  padding: 0 1em;
+  border-radius: 10px;
 }
 
 #feedback-form label {
@@ -140,10 +155,25 @@
 #feedback-form {
   display: flex;
   flex-direction: row;
+  background-color: #e8f5ee;
+  border-radius: 15px;
 }
 
-.personal-details input {
+#feedback-form legend {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
 
+.feedback-form-section {
+  background-color: #f0fdf4;
+  border: 1px solid #cfe8d7;
+}
+
+#feedback-form input, 
+#feedback-form textarea, 
+#feedback-form select {
+	width: 100%;
+	margin: 0.8em 0;
 }
 
 .feedback-details p{
@@ -151,3 +181,11 @@
   color: #6B7280;
 }
 
+
+.programmes-section,
+.reviews-summary,
+.feedback-form-section {
+  border-radius: 16px;
+  margin-bottom: 2em;
+  padding: 1em;
+}
