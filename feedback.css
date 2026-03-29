@@ -149,13 +149,16 @@
 
 #feedback-form fieldset {
   flex: 1; /* Make the 2 fieldsets inside feedback-form share an equal ratio of 1:1 of available space */
-  border: 2px solid #b7c9bd;
-  padding: 0 1em;
+  border: 1.5px solid #b7c9bd;
+  padding: 1em;
   border-radius: 10px;
+  background-color: #f9fffb;
 }
 
 #feedback-form label {
   display: block;
+  font-weight: 600;
+  color: #1f2937;
 }
 
 #feedback-form legend {
