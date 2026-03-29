@@ -71,4 +71,9 @@
   border-radius: 10px;
 }
 
+.overall-rating {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
 
