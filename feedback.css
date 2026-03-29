@@ -128,10 +128,26 @@
 }
 
 .feedback-form fieldset {
-  margin: 1em 0;
+  margin: 1em auto;
+  text-align: center;
 
+}
+
+.feedback-form label {
+  display: block;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: row;
 }
 
 .personal-details input {
 
+}
+
+.feedback-details p{
+  text-align: left;
+  color: #6B7280;
+  
 }

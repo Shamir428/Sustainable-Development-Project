@@ -174,22 +174,21 @@
       			<legend>Personal Details</legend>
       			<label for="full-name">Full name:</label>
       			<input type="text" id="full-name" name="full-name" >
-      			<br>
       			<label for="email">Email address:</label>
       			<input type="email" id="email" name="email" >
-      			<br>
       			<label for="tel">Telephone number:</label>
       			<input type="tel" id="tel" name="telephone" >
-      			<br>
-      			<label for="address">Location address:</label>
-      			<textarea id="address" name="location-address" rows="1" cols="20" placeholder="Enter your address"></textarea>
+      			<label for="address">Address:</label>
+      			<textarea id="address" name="address" rows="3" cols="20" placeholder="Enter your address"></textarea>
       		</fieldset>
       		<fieldset class="feedback-details">
       			<legend>Feedback details</legend>
       			<label for="feedback">Feedback message:</label>
-      			<textarea id="feedback" name="feedback-message" rows="4" cols="50" placeholder="Write your feedback about the programme" ></textarea>
-      			<select>
-      				<option>Select a programme</option>
+      			<textarea id="feedback" name="feedback-message" rows="4" cols="50" maxlength="500" placeholder="Write your feedback about the programme" ></textarea>
+      			<p>Remaining characters:<span id="remaining-chars"></p>
+      			<label for="programme-feedback">Which programme are you reviewing:</label>
+      			<select id="programme-feedback" name="programme-feedback">
+      				<option value="">Select a programme</option>
       				<option>Register with a doctor</option>
       				<option>Counselling and mental health support</option>
       				<option>Sexual health support</option>
@@ -197,6 +196,7 @@
       				<option>Disability and wellbeing support</option>
       				<option>Active wellbeing and mindfulness</option>
       			</select>
+      			<label>
       		</fieldset>
       	</form>
       </section>
@@ -210,5 +210,6 @@
         <a href="validation_ST3.html">Validation</a>
       </p>
     </footer>
+    <script src="feedback.js"></script>
   </body>
 </html>
