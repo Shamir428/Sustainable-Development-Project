@@ -71,9 +71,37 @@
   border-radius: 10px;
 }
 
+.reviews-summary h2 {
+  text-align: center;
+}
+
 .overall-rating {
   width: 70%;
   margin: 0 auto;
   text-align: center;
+  background-color: #e8f5ee;
+  border-radius: 25px;
+  padding-top: 0.7em;
+  padding-bottom: 0.1em;
+}
+
+
+
+.numeric-rating {
+  font-size: 4em;
+  color: #2e8b57;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.rating-label {
+  font-weight: 600;
+  color: #1f3d2f;
+  text-transform: uppercase;
+}
+
+.total-reviews {
+  color: #666;
+  line-height: 0.6; /* Reduce line-height because had too much and uneven vertical spacing between the ratings text and border compared to numeric rating text */
 }
 
