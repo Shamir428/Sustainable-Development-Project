@@ -18,7 +18,7 @@
         <nav>
           <ul class="nav-links">
           	<li><a href="home.html">Home</a></li>
-          	<li><a href="simulator.html">Action Impact Simulator</a></li>
+          	<li><a href="ais.html">Action Impact Simulator</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="profile.html">User Profile</a></li>
             <li><a class="active" href="feedback.html">Feedback</a></li>
@@ -79,7 +79,7 @@
            	<button class="programme-btn">Learn more</button>
           </article>
           <article class="programme-card">
-            <h3>Sexual Health Support</h3>
+            <h3>Sexual health support</h3>
             <img
               src="img/feedback/sexual-health.jpg"
               alt="Doctor providing confidential health advice during a clinic consultation"
@@ -91,7 +91,7 @@
            	<button class="programme-btn">Learn more</button>
           </article>
           <article class="programme-card">
-            <h3>Vaccination and Infection Prevention</h3>
+            <h3>Vaccination and infection prevention</h3>
             <img
               src="img/feedback/vaccination.jpg"
               alt="Healthcare worker preparing a vaccination in a clinic"
@@ -104,7 +104,7 @@
            	<button class="programme-btn">Learn more</button>
           </article>
           <article class="programme-card">
-            <h3>Disability and Wellbeing Support</h3>
+            <h3>Disability and wellbeing support</h3>
             <img
               src="img/feedback/student-in-wheelchair.jpg"
               alt="Student using a wheelchair studying in a university support environment"
@@ -153,7 +153,7 @@
 				Signing up was much easier than I expected. The GP registration guidance was clear and easy to follow, which made the whole process feel straightforward and less confusing.
   				<a href="#">See more</a>
   				</p>
-  				<p>Justin Time · <time datetime="2020-02-11">11 February 2026</time></p>
+  				<p>Justin Time · <time datetime="2026-02-11">11 February 2026</time></p>
   				<p>8/10</p>
 			</article>
 			<article class="review-card">
@@ -173,23 +173,30 @@
       		<fieldset class="personal-details">
       			<legend>Personal Details</legend>
       			<label for="full-name">Full name:</label>
-      			<input type="text" id="full-name" name="full-name" required>
+      			<input type="text" id="full-name" name="full-name" >
       			<br>
       			<label for="email">Email address:</label>
-      			<input type="email" id="email" name="email" required>
+      			<input type="email" id="email" name="email" >
       			<br>
       			<label for="tel">Telephone number:</label>
-      			<input type="tel" id="tel" name="telephone" required>
+      			<input type="tel" id="tel" name="telephone" >
       			<br>
       			<label for="address">Location address:</label>
-      			<textarea id="address" name="location-address" rows="2" cols="10" required>
-      			</textarea>
+      			<textarea id="address" name="location-address" rows="1" cols="20" placeholder="Enter your address"></textarea>
       		</fieldset>
       		<fieldset class="feedback-details">
       			<legend>Feedback details</legend>
       			<label for="feedback">Feedback message:</label>
-      			<textarea id="feedback" name="feedback-message" rows="4" cols="50" placeholder="Write your comment/message" required> </textarea>
-      		
+      			<textarea id="feedback" name="feedback-message" rows="4" cols="50" placeholder="Write your feedback about the programme" ></textarea>
+      			<select>
+      				<option>Select a programme</option>
+      				<option>Register with a doctor</option>
+      				<option>Counselling and mental health support</option>
+      				<option>Sexual health support</option>
+      				<option>Vaccination and infection prevention</option>
+      				<option>Disability and wellbeing support</option>
+      				<option>Active wellbeing and mindfulness</option>
+      			</select>
       		</fieldset>
       	</form>
       </section>
