@@ -76,16 +76,19 @@
 }
 
 .overall-rating {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
   text-align: center;
   background-color: #e8f5ee;
   border-radius: 25px;
   padding-top: 0.7em;
   padding-bottom: 0.1em;
+  margin-bottom: 2em;
 }
 
-
+.recent-label {
+	color: #666;
+}
 
 .numeric-rating {
   font-size: 4em;
@@ -105,3 +108,15 @@
   line-height: 0.6; /* Reduce line-height because had too much and uneven vertical spacing between the ratings text and border compared to numeric rating text */
 }
 
+.individual-reviews {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.review-card {
+  background-color: #ffffff;
+  border: 1px solid #dbe3ea;
+  border-radius: 15px;
+  margin: 0 auto;
+}
