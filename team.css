@@ -1,3 +1,42 @@
 .container {
 text-align: center;
 }
+
+.team-members {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: center; /* Put all flex items in the middle of the flex container's main axis which horizontal */
+}
+
+.team-members p {
+  margin: 0.2em 0;
+}
+
+.team-member {
+  background-color: #eaf4ff;
+  border-radius: 1em;
+  padding: 0 1em;
+  width: 260px;
+}
+
+.team-member:hover {
+  border-radius: 1.5em;
+  transition: 0.3s;
+  background-color:#dbeafe;
+}
+
+
+
+.team-member img {
+	width: 150px;
+	height: auto;
+	transition: 0.3s;
+}
+
+.team-member img:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+  width: 165px;
+  
+}
