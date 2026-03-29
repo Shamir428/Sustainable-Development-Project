@@ -169,7 +169,7 @@
       </section>
       <section class="feedback-form-section">
       	<h2>Share your feedback</h2>
-      	<form class="feedback-form" action="#" method="post">
+      	<form id="feedback-form" action="#" method="post">
       		<fieldset class="personal-details">
       			<legend>Personal Details</legend>
       			<label for="full-name">Full name:</label>
@@ -185,18 +185,18 @@
       			<legend>Feedback details</legend>
       			<label for="feedback">Feedback message:</label>
       			<textarea id="feedback" name="feedback-message" rows="4" cols="50" maxlength="250" placeholder="Write your feedback about the programme" ></textarea>
-      			<p>Remaining characters: <span id="remaining-chars"></p>
+      			<p>Remaining characters: <span id="remaining-chars"></span></p>
       			<label for="programme-feedback">Which programme are you reviewing:</label>
       			<select id="programme-feedback" name="programme-feedback">
-      				<option value="">Select a programme</option>
-      				<option>Register with a doctor</option>
-      				<option>Counselling and mental health support</option>
-      				<option>Sexual health support</option>
-      				<option>Vaccination and infection prevention</option>
-      				<option>Disability and wellbeing support</option>
-      				<option>Active wellbeing and mindfulness</option>
+      				<option value="" disabled selected>Select a programme</option>
+					<option value="gp-registration">Register with a doctor</option>
+					<option value="counselling-support">Counselling and mental health support</option>
+					<option value="sexual-health">Sexual health support</option>
+					<option value="vaccination-prevention">Vaccination and infection prevention</option>
+					<option value="disability-support">Disability and wellbeing support</option>
+					<option value="active-wellbeing">Active wellbeing and mindfulness</option>
       			</select>
-      			<label>
+      			<button class="submit-btn" type="submit">Submit</button>
       		</fieldset>
       	</form>
       </section>

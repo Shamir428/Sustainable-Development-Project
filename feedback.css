@@ -127,17 +127,17 @@
   margin-bottom: 1em;
 }
 
-.feedback-form fieldset {
+#feedback-form fieldset {
   margin: 1em auto;
   text-align: center;
 
 }
 
-.feedback-form label {
+#feedback-form label {
   display: block;
 }
 
-.feedback-form {
+#feedback-form {
   display: flex;
   flex-direction: row;
 }
@@ -149,5 +149,5 @@
 .feedback-details p{
   text-align: left;
   color: #6B7280;
-  
 }
+

@@ -1,4 +1,18 @@
 
+//Form input validation
+
+const fullName = document.getElementById("full-name");
+const email = document.getElementById("email");
+const form = document.getElementById("feedback-form");
+
+form.addEventListener("submit", (event) => {
+event.preventDefault();
+
+
+});
+
+
+
 //Character count logic
 
 let feedback = document.getElementById("feedback");
