@@ -198,6 +198,7 @@
 }
 
 .submit-btn {
+  display: block;
   background-color: #10b981;
   margin: 0 auto;
 }
