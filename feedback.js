@@ -1,12 +1,21 @@
 
+//Character count logic
+
 let feedback = document.getElementById("feedback");
 
-let charCounter = document.getElementById("remaining-chars");
+let remainingCharsText = document.getElementById("remaining-chars");
+
+remainingCharsText.textContent = 250;
 
 feedback.addEventListener("input", function() {
-	let feedbackText = feedback.value;
-	let length = feedbackText.length;
-	charCounter.textContent = length;
+	
+	let feedbackContent = feedback.value;
+	let length = feedbackContent.length;
+	let remainingChars = 250 - length;
+	remainingCharsText.textContent = remainingChars;
+	
 });
+
+
 
 
