@@ -115,8 +115,23 @@
 }
 
 .review-card {
-  background-color: #ffffff;
-  border: 1px solid #dbe3ea;
+  background-color: #f7fbf8;
+  border: 1px solid #dbe7df;
   border-radius: 15px;
   margin: 0 auto;
+  padding: 1em 1em;
+  text-align: center;
+}
+
+.review-card h3 {
+  margin-bottom: 1em;
+}
+
+.feedback-form fieldset {
+  margin: 1em 0;
+
+}
+
+.personal-details input {
+
 }
