@@ -1,15 +1,31 @@
 
 //Form input validation
 
-const fullName = document.getElementById("full-name");
-const email = document.getElementById("email");
-const form = document.getElementById("feedback-form");
+let fullName = document.getElementById("full-name");
+let email = document.getElementById("email");
+let form = document.getElementById("feedback-form");
 
-form.addEventListener("submit", (event) => {
-event.preventDefault();
+form.addEventListener("submit", handleFormSubmit);
 
 
-});
+function validateForm() {
+	if (!fullName.strip().includes(' ')) {
+		console.log("false");
+	}
+}
+
+
+function handleFormSubmit(event) {
+	event.preventDefault(); /*The form does not send or save data anywhere, however, 
+							by default, clicking a submit button in a form still triggers browser to refresh or something similar.
+							Calling preventDefault() on event object which is
+						    an object that is created when the form submission event is triggered and stores information about that event, prevents the default behavior of
+						    the browser to trigger */
+	
+	
+}
+
+
 
 
 
