@@ -37,13 +37,33 @@ function validateForm() {
 	let visitDateValue = visitDate.value;
 	let submitDateValue = submitDate.value;
 	
-	let nameParts = fullNameText.split(/\s+/) /*Use regex pattern which matches types of texts, in this case 1 or more whitespaces */
-	if (!fullNameText.includes(' ')) {
-		nameError.textContent = "Full name is required";
+	let nameParts = fullNameText.split(/\s+/) /*Use a regex pattern, which matches parts of text based on a rule, in this case one or more whitespace characters */
+	if (fullNameText === "" || nameParts.length < 2) {
+		nameError.textContent = "Enter your full name";
 		isValid = false;
 	}
 	if (emailText === "" || !emailText.includes("@") || emailText.charAt(emailText.length - 1) === "@" || !emailText.includes(".") || emailText.charAt(emailText.length - 1) === "."|| emailText.charAt(0) === "." || emailText.charAt(0) === "@") {
-		emailError.textContent = "A valid address with @ and domain is required";
+		emailError.textContent = "Enter a valid email address";
+		isValid = false;
+	}
+	
+	let telPattern = /^[0-9+\-\s()]+$/;
+	if (telText === "") {
+		telephoneError.textContent = "Telephone number is required";
+		isValid = false;
+	} else if (!telPattern.test(telText)) {
+		telephoneError.textContent = "Telephone number contains invalid characters";
+		isValid = false;
+	} else {
+		let digitsOnly = telText.replace(/\D/g, "");
+		if (digitsOnly.length < 7) {
+			telephoneError.textContent = "Telephone number must contain at least 7 digits";
+			isValid = false;
+		}
+	}
+	
+	if (addressText === "") {
+		addressError.textContent = "Address is required";
 		isValid = false;
 	}
 	
