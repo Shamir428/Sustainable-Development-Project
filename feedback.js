@@ -20,6 +20,7 @@ const programmeError = document.getElementById("programme-error");
 const visitDateError = document.getElementById("visit-date-error");
 const submitDateError = document.getElementById("submit-date-error");
 
+const formStatus = document.getElementById("form-status");
 
 form.addEventListener("submit", handleFormSubmit);
 
@@ -109,6 +110,7 @@ function clearErrors() {
 	programmeError.textContent = "";
 	visitDateError.textContent = "";
 	submitDateError.textContent = "";
+	formStatus.textContent = "";
 }
 
 
@@ -119,11 +121,10 @@ function handleFormSubmit(event) {
 						    an object that is created when the form submission event is triggered and stores information about that event, prevents the default behavior of
 						    the browser to trigger */
 	
-	if (validateForm() === false) {
-		console.log("False")
-	}
-	else {
-		console.log("True");
+	if (validateForm()) {
+		formStatus.textContent = "Thank you for your feedback! Your form was submitted successfully.";
+		form.reset();
+		remainingCharsText.textContent = 250;
 	}
 }
 
