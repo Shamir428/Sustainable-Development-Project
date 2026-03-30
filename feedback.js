@@ -1,17 +1,38 @@
 
 //Form input validation
 
-let fullName = document.getElementById("full-name");
-let email = document.getElementById("email");
-let form = document.getElementById("feedback-form");
+const fullName = document.getElementById("full-name");
+const email = document.getElementById("email");
+const form = document.getElementById("feedback-form");
+
+const nameError = document.getElementById("name-error");
+const emailError = document.getElementById("email-error");
+
 
 form.addEventListener("submit", handleFormSubmit);
 
 
 function validateForm() {
-	if (!fullName.strip().includes(' ')) {
-		console.log("false");
+	clearErrors();
+	isValid = true;
+	
+	let fullNameText = fullName.value.trim();
+	let emailText = email.value.trim();
+	
+	if (!fullNameText.includes(' ')) {
+		nameError.textContent = "Full name is required";
+		isValid = false;
 	}
+	if (emailText === "") {
+		emailError.textContent = "A valid address with @ and domain is required";
+	}
+	
+	
+}
+
+
+function clearErrors() {
+	nameError.textContent = "";
 }
 
 
@@ -22,7 +43,7 @@ function handleFormSubmit(event) {
 						    an object that is created when the form submission event is triggered and stores information about that event, prevents the default behavior of
 						    the browser to trigger */
 	
-	
+	validateForm();
 }
 
 
