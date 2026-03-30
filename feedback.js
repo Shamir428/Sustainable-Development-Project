@@ -61,9 +61,9 @@ function validateForm() {
 			telephoneError.textContent = "Telephone number must contain at least 7 digits";
 			isValid = false;
 		}
-	else if (digitsOnly.length > 15) {
-		telephoneError.textContent = "Telephone number must not contain more than 15 digits";
-		isValid = false;
+		else if (digitsOnly.length > 15) {
+			telephoneError.textContent = "Telephone number must not contain more than 15 digits";
+			isValid = false;
 		}
 	}
 	
@@ -123,8 +123,6 @@ function handleFormSubmit(event) {
 	
 	if (validateForm()) {
 		formStatus.textContent = "Thank you for your feedback! Your form was submitted successfully.";
-		form.reset();
-		remainingCharsText.textContent = 250;
 	}
 }
 

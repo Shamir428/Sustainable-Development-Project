@@ -207,3 +207,9 @@
   background-color: #059669;
 }
 
+
+#form-status {
+	margin-top: 1rem;
+	font-weight: 600;
+	color: green;
+}
