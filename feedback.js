@@ -79,6 +79,21 @@ function validateForm() {
 		isValid = false;
 	}
 	
+	if (programmeValue === "") {
+		programmeError.textContent = "Please select a programme";
+		isValid = false;
+	}
+	
+	if (visitDateValue === "") {
+		visitDateError.textContent = "Please select the date attended";
+		isValid = false;
+	}
+	
+	if (submitDateValue === "") {
+		submitDateError.textContent = "Please select the date and time of feedback";
+		isValid = false;
+	}
+	
 	return isValid;
 	
 	
@@ -89,7 +104,11 @@ function clearErrors() {
 	nameError.textContent = "";
 	emailError.textContent = "";
 	telephoneError.textContent = "";
-	
+	addressError.textContent = "";
+	feedbackError.textContent = "";
+	programmeError.textContent = "";
+	visitDateError.textContent = "";
+	submitDateError.textContent = "";
 }
 
 
