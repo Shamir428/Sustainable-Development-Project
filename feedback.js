@@ -5,32 +5,39 @@ const fullName = document.getElementById("full-name");
 const email = document.getElementById("email");
 const form = document.getElementById("feedback-form");
 const tel = document.getElementById("tel");
-const address = document.getElementById("address");
 const feedback = document.getElementById("feedback");
+const address = document.getElementById("address");
 const programmeFeedback = document.getElementById("programme-feedback");
 const visitDate = document.getElementById("visit-date");
 const submitDate = document.getElementById("submit-date");
 
+const nameError = document.getElementById("name-error");
+const emailError = document.getElementById("email-error");
 const telephoneError = document.getElementById("telephone-error");
-const addressError = document.getElementById("address-errror");
+const addressError = document.getElementById("address-error");
 const feedbackError = document.getElementById("feedback-error");
 const programmeError = document.getElementById("programme-error");
 const visitDateError = document.getElementById("visit-date-error");
 const submitDateError = document.getElementById("submit-date-error");
-
-const nameError = document.getElementById("name-error");
-const emailError = document.getElementById("email-error");
 
 
 form.addEventListener("submit", handleFormSubmit);
 
 
 function validateForm() {
-	let isValid = true;
 	clearErrors();
+	let isValid = true;
+	
 	let fullNameText = fullName.value.trim();
 	let emailText = email.value.trim();
+	let telText = tel.value.trim();
+	let addressText = address.value.trim();
+	let feedbackText = feedback.value.trim();
+	let programmeValue = programmeFeedback.value;
+	let visitDateValue = visitDate.value;
+	let submitDateValue = submitDate.value;
 	
+	let nameParts = fullNameText.split(/\s+/) /*Use regex pattern which matches types of texts, in this case 1 or more whitespaces */
 	if (!fullNameText.includes(' ')) {
 		nameError.textContent = "Full name is required";
 		isValid = false;
@@ -73,8 +80,6 @@ function handleFormSubmit(event) {
 
 
 //Character count logic
-
-let feedback = document.getElementById("feedback");
 
 let remainingCharsText = document.getElementById("remaining-chars");
 
