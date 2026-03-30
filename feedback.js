@@ -13,9 +13,8 @@ form.addEventListener("submit", handleFormSubmit);
 
 
 function validateForm() {
+	let isValid = true;
 	clearErrors();
-	isValid = true;
-	
 	let fullNameText = fullName.value.trim();
 	let emailText = email.value.trim();
 	
@@ -23,9 +22,12 @@ function validateForm() {
 		nameError.textContent = "Full name is required";
 		isValid = false;
 	}
-	if (emailText === "") {
+	if (emailText === "" || !emailText.includes("@") || emailText.charAt(emailText.length - 1) === "@" || !emailText.includes(".") || emailText.charAt(emailText.length - 1) === "."|| emailText.charAt(0) === "." || emailText.charAt(0) === "@") {
 		emailError.textContent = "A valid address with @ and domain is required";
+		isValid = false;
 	}
+	
+
 	
 	
 }
@@ -33,6 +35,8 @@ function validateForm() {
 
 function clearErrors() {
 	nameError.textContent = "";
+	emailError.textContent = "";
+	
 }
 
 
