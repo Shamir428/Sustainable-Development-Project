@@ -67,6 +67,14 @@ function validateForm() {
 		isValid = false;
 	}
 	
+	if (feedbackText === "") {
+		feedbackError.textContent = "Feedback message is required";
+		isValid = false;
+	} else if (feedbackText.length < 10) {
+		feedbackError.textContent = "Feedback must be at least 10 characters";
+		isValid = false;
+	}
+	
 	return isValid;
 	
 	

@@ -188,9 +188,11 @@
       		<fieldset class="feedback-details">
       			<legend>Feedback details</legend>
       			<label for="feedback">Feedback message:</label>
+      			<span class="error-message" id="feedback-error"></span>
       			<textarea id="feedback" name="feedback-message" rows="4" cols="50" maxlength="250" placeholder="Write your feedback about the programme" ></textarea>
       			<p>Remaining characters: <span id="remaining-chars"></span></p>
       			<label for="programme-feedback">Which programme are you reviewing:</label>
+      			<span class="error-message" id="programme-error"></span>
       			<select id="programme-feedback" name="programme-feedback">
       				<option value="" disabled selected>Select a programme</option>
 					<option value="gp-registration">Register with a doctor</option>
@@ -201,8 +203,10 @@
 					<option value="active-wellbeing">Active wellbeing and mindfulness</option>
       			</select>
         		<label for="visit-date">Date attended:</label>
+        		<span class="error-message" id="visit-date-error"></span>
        			<input type="date" id="visit-date" name="visit-date">
         		<label for="submit-date">Date and time of feedback:</label>
+        		<span class="error-message" id="submit-date-error"></span>
         		<input type="datetime-local" id="submit-date" name="submit-date">
       			<button class="submit-btn" type="submit">Submit</button>
       		</fieldset>
