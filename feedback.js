@@ -52,13 +52,17 @@ function validateForm() {
 		telephoneError.textContent = "Telephone number is required";
 		isValid = false;
 	} else if (!telPattern.test(telText)) {
-		telephoneError.textContent = "Telephone number contains invalid characters";
+		telephoneError.textContent = "Telephone number can only contain digits, spaces, +, -, and parentheses";
 		isValid = false;
 	} else {
 		let digitsOnly = telText.replace(/\D/g, "");
 		if (digitsOnly.length < 7) {
 			telephoneError.textContent = "Telephone number must contain at least 7 digits";
 			isValid = false;
+		}
+	else if (digitsOnly.length > 15) {
+		telephoneError.textContent = "Telephone number must not contain more than 15 digits";
+		isValid = false;
 		}
 	}
 	
@@ -84,6 +88,7 @@ function validateForm() {
 function clearErrors() {
 	nameError.textContent = "";
 	emailError.textContent = "";
+	telephoneError.textContent = "";
 	
 }
 
