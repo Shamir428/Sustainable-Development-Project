@@ -4,6 +4,19 @@
 const fullName = document.getElementById("full-name");
 const email = document.getElementById("email");
 const form = document.getElementById("feedback-form");
+const tel = document.getElementById("tel");
+const address = document.getElementById("address");
+const feedback = document.getElementById("feedback");
+const programmeFeedback = document.getElementById("programme-feedback");
+const visitDate = document.getElementById("visit-date");
+const submitDate = document.getElementById("submit-date");
+
+const telephoneError = document.getElementById("telephone-error");
+const addressError = document.getElementById("address-errror");
+const feedbackError = document.getElementById("feedback-error");
+const programmeError = document.getElementById("programme-error");
+const visitDateError = document.getElementById("visit-date-error");
+const submitDateError = document.getElementById("submit-date-error");
 
 const nameError = document.getElementById("name-error");
 const emailError = document.getElementById("email-error");
@@ -27,7 +40,7 @@ function validateForm() {
 		isValid = false;
 	}
 	
-
+	return isValid;
 	
 	
 }
@@ -47,7 +60,12 @@ function handleFormSubmit(event) {
 						    an object that is created when the form submission event is triggered and stores information about that event, prevents the default behavior of
 						    the browser to trigger */
 	
-	validateForm();
+	if (validateForm() === false) {
+		console.log("False")
+	}
+	else {
+		console.log("True");
+	}
 }
 
 
