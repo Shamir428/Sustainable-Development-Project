@@ -1,16 +1,215 @@
 .page-intro {
-    text-align: center;
+  text-align: center;
 }
 
 .page-intro h1 {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .programmes-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 1.5em;
+  max-height: 55vh; /* Limit grid section for programme cards with max height of 50% of the viewport height (browser's visible window area) */
+  overflow-y: auto; /* Make content stay inside the grid's max-height, if it becomes taller, then it adds a vertical scrollbar so the rest of the content can be scrolled */ 
+  overflow-x: hidden;
 }
 
-.programmes-grid img {
-    width: 40%;
+.programme-card {
+  background-color: #e6f2ff;
+  border: 1px solid #cfe4ff;
+  border-radius: 12px; 
+  /* Add padding to card so there is more space between the content inside card and border, so image and text don't touch the edge of card.
+  This was better than using horizontal margins because I would've needed to add horizontal margins and specifically select each child element in the card such as p, img, h3 
+  And also the global css already styles all elements to have border-box box sizing, so that the padding itself accounts to entire width of elements, so the cards don't over their layouts and stick out more than the feedback page
+  */
+  padding: 1em; 
+}
+
+.programme-card img {
+  width: 100%;
+  height: 200px;
+  margin: 0.75em 0;
+  object-fit: cover; /* This CSS property styles how the image content itself is fitted inside the img element box, in this case, the css value scale the image (but keep the original proportions) so the whole img box is covered */
+}
+
+.programme-btn {
+  background-color: #3b82f6;
+  margin: 0 auto;
+  border-radius: 6px;
+  transition: 0.2s;
+  display: block;
+}
+
+.programme-btn:hover {
+  background-color: #2563eb;
+  border-radius: 6px;
+}
+
+.filter-bar label {
+  font-weight: 600;
+  color: #008B8B;
+}
+
+.filter-bar select {
+  border: 1.75px solid #475569;
+  border-radius: 6px;
+  padding: 0.25em 0;
+  text-align: center;
+  color: #1f2937;
+}
+
+.filter-bar {
+  text-align: right;
+  margin-bottom: 10px;
+  padding: 0.75em 1em;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+}
+
+.programmes-section {
+  background-color: #f7fbff;
+  border: 1px solid #dbeafe;
+}
+
+.reviews-summary {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.reviews-summary h2 {
+  text-align: center;
+}
+
+.overall-rating {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #e8f5ee;
+  border-radius: 25px;
+  padding-top: 0.7em;
+  padding-bottom: 0.1em;
+  margin-bottom: 2em;
+}
+
+.recent-label {
+	color: #666;
+}
+
+.numeric-rating {
+  font-size: 4em;
+  color: #2e8b57;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.rating-label {
+  font-weight: 600;
+  color: #1f3d2f;
+  text-transform: uppercase;
+}
+
+.total-reviews {
+  color: #666;
+  line-height: 0.6; /* Reduce line-height because the text created too much and uneven vertical spacing between the ratings text and border compared to numeric rating text */
+}
+
+.individual-reviews {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.review-card {
+  background-color: #eef7f1;
+  border: 1px solid #dbe7df;
+  border-radius: 15px;
+  padding: 1em;
+  text-align: center;
+}
+
+.review-card h3 {
+  margin-bottom: 0.7em;
+}
+
+.reviews-summary {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+#feedback-form {
+  display: flex;
+  flex-direction: row;
+  background-color: #e8f5ee;
+  border-radius: 15px;
+  gap: 1em;
+  background-color: #ffffff;
+  border: 1px solid #cfe8d7;
+}
+
+#feedback-form fieldset {
+  flex: 1; /* Make the 2 fieldsets inside feedback-form share an equal ratio of 1:1 of available space */
+  border: 1.5px solid #b7c9bd;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #f9fffb;
+}
+
+#feedback-form label {
+  display: block;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+#feedback-form legend {
+  text-align: center;
+  font-weight: 700;
+  color: #166534;
+}
+
+.feedback-form-section {
+  background-color: #f0fdf4;
+  border: 1px solid #cfe8d7;
+}
+
+#feedback-form input, 
+#feedback-form textarea, 
+#feedback-form select {
+  width: 100%;
+  margin: 0.8em 0;
+  padding: 0.75em;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: white;
+  color: #1f2937;
+}
+
+.feedback-details p {
+  color: #6B7280;
+}
+
+.programmes-section,
+.reviews-summary,
+.feedback-form-section {
+  border-radius: 16px;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.submit-btn {
+  display: block;
+  background-color: #10b981;
+  margin: 0 auto;
+}
+
+.submit-btn:hover {
+  background-color: #059669;
+}
+
+
+#form-status {
+	margin-top: 1rem;
+	font-weight: 600;
+	color: green;
 }

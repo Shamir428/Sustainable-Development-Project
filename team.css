@@ -1,0 +1,65 @@
+.container {
+text-align: center;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: center;
+}
+
+.team-members p {
+  margin: 0.2em 0;
+}
+
+.team-member {
+  background-color: #eaf4ff;
+  border-radius: 1em;
+  padding: 0 1em;
+  width: 260px;
+  padding: 1.25rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  
+}
+
+.team-member:hover {
+  border-radius: 1.5em;
+  transition: 0.3s;
+  background-color:#dbeafe;
+  transform: translateY(-6px);
+}
+
+
+
+.team-member img {
+	width: 150px;
+	height: auto;
+	transition: 0.3s;
+}
+
+.team-member img:hover {
+  opacity: 0.75;
+  transition: 0.3s;
+  transform: scale(1.08);
+}
+
+.member-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.team-member:hover .member-details {
+  max-height: 220px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+
+
+
+

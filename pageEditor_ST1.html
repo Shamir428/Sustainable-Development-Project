@@ -70,10 +70,9 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="ais.html">Action Impact Simulator</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="profile.html">User Profile</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
                 <li><a href="team.html">Team</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
+                
             </ul>
         </nav>
     </div>
@@ -117,31 +116,48 @@
     <h2>Home Page</h2>
 
     <p><strong>Link:</strong> 
-        <a href="home.html" target="_blank">View Home Page</a>
+        <a href="home.html" target="_blank">View Home Page</a> |
+        <a href="validation.html#home-validation">View Validation</a>
     </p>
 
     <h3>HTML Structure</h3>
     <p>
-        The Home Page was built using semantic HTML elements such as 
+        The Home Page was built using semantic HTML elements including 
         <strong>&lt;header&gt;</strong>, <strong>&lt;main&gt;</strong>, and 
-        <strong>&lt;section&gt;</strong> to clearly organise content. Each section was 
-        structured to separate the introduction, card-based content, and gallery area.
+        <strong>&lt;section&gt;</strong> to clearly organise content. 
+        The layout is divided into three main sections: an introduction, 
+        a card-based content area, and a topic exploration section.
+    </p>
+
+    <p>
+        Each content block was grouped logically to improve readability and 
+        accessibility, allowing screen readers to navigate the page effectively.
     </p>
 
     <h3>CSS Techniques</h3>
     <p>
-        Flexbox was used to align the navigation bar and ensure it remains responsive 
-        across different screen sizes. A reusable card design was created using the global CSS 
-        to maintain consistency across all pages. Hover effects were added to improve 
-        interactivity and visual feedback.
+        CSS Grid was used to create a responsive card layout using 
+        <strong>grid-template-columns: repeat(auto-fit, minmax(...))</strong>, 
+        ensuring the layout adapts to different screen sizes.
+    </p>
+
+    <p>
+        Global CSS classes were used for reusable components such as cards, 
+        buttons, and navigation. Hover effects were implemented using 
+        <strong>transform</strong> and <strong>transition</strong> properties 
+        to improve interactivity.
     </p>
 
     <h3>Design and Implementation Decisions</h3>
     <p>
-        A card-based layout was chosen to present information in a clear and structured way. 
-        This improves readability and allows users to quickly understand key points. 
-        The colour scheme was kept consistent with the global CSS to maintain a unified 
-        visual identity across the website.
+        A card-based layout was chosen to present key topics clearly and 
+        consistently. Each card includes an image, heading, and bullet points 
+        to break information into manageable sections.
+    </p>
+
+    <p>
+        Internal links were added to connect each card to its corresponding 
+        content page, improving navigation and user experience.
     </p>
 </section>
 
@@ -150,35 +166,58 @@
     <h2>Gallery Page</h2>
 
     <p><strong>Link:</strong> 
-        <a href="gallery.html" target="_blank">View Gallery</a>
+        <a href="gallery.html" target="_blank">View Gallery</a> |
+        <a href="validation.html#gallery-validation">View Validation</a>
     </p>
 
     <h3>HTML Structure</h3>
     <p>
-        The Gallery Page was structured using a grid layout to display multiple images 
-        in an organised and responsive way. Each gallery item contains an image and 
-        descriptive text related to the SDG theme.
+        The Gallery Page uses a structured grid layout where each gallery item 
+        consists of an image and a caption. Each item is wrapped in a container 
+        to allow interaction through JavaScript.
+    </p>
+
+    <p>
+        The modal (extended view) is implemented as a hidden section that becomes 
+        visible when a user clicks on an image.
     </p>
 
     <h3>CSS Techniques</h3>
     <p>
-        CSS Grid was used to create a flexible and responsive gallery layout. 
-        Additional styling such as hover effects and spacing were applied to make 
-        the gallery visually engaging and easy to navigate.
+        CSS Grid was used to create a responsive layout that automatically adjusts 
+        the number of columns depending on screen size.
+    </p>
+
+    <p>
+        Visual enhancements such as hover scaling effects were implemented using 
+        <strong>transform: scale()</strong>, and the modal overlay uses 
+        <strong>position: fixed</strong> with a semi-transparent background to 
+        focus user attention.
     </p>
 
     <h3>JavaScript Functionality</h3>
     <p>
-        JavaScript was used to implement interactivity. When a user clicks on an image, 
-        an extended view (modal) is displayed showing a larger version of the image and 
-        additional information. Users can also close this view, improving usability.
+        JavaScript functions were used to control the modal behaviour. When a user 
+        clicks a gallery item, the <strong>openModal()</strong> function dynamically 
+        updates the image source and text content.
+    </p>
+
+    <p>
+        Additional functions such as <strong>closeModal()</strong>, 
+        <strong>changeColor()</strong>, and <strong>changeFont()</strong> were 
+        implemented to enhance interactivity and allow basic user customisation.
     </p>
 
     <h3>Design Decisions</h3>
     <p>
-        A modal design was used to display extended content without redirecting users 
-        to another page. This improves user experience by keeping navigation simple 
-        and intuitive.
+        A modal design was chosen to allow users to view additional information 
+        without navigating away from the page. This improves usability and keeps 
+        the experience seamless.
+    </p>
+
+    <p>
+        Simple interactive controls were added to meet the specification requirement 
+        for user interaction and customisation.
     </p>
 </section>
 
@@ -245,34 +284,55 @@
     <h2>Meeting Log</h2>
 
     <table>
-        <tr>
-            <th>Date</th>
-            <th>Format</th>
-            <th>Objective</th>
-            <th>My Contribution</th>
-        </tr>
+    <tr>
+        <th>Date</th>
+        <th>Format</th>
+        <th>Objective</th>
+        <th>My Contribution</th>
+    </tr>
 
-        <tr>
-            <td>27th Feb</td>
-            <td>Face-to-face</td>
-            <td>Assign roles</td>
-            <td>Chose responsibility for Home Page and template</td>
-        </tr>
+    <tr>
+        <td>16th Feb</td>
+        <td>Face-to-face</td>
+        <td>Initial meeting – choose SDG and assign roles</td>
+        <td>I agreed to take responsibility for the template, Home Page, and Gallery Page</td>
+    </tr>
 
-        <tr>
-            <td>2nd Mar</td>
-            <td>Online</td>
-            <td>Design discussion</td>
-            <td>Suggested layout structure and colour palette</td>
-        </tr>
+    <tr>
+        <td>5th March</td>
+        <td>Online</td>
+        <td>Discuss website structure and layout</td>
+        <td>I suggested using a consistent template and helped plan the navigation layout</td>
+    </tr>
 
-        <tr>
-            <td>7th March</td>
-            <td>Hybrid</td>
-            <td>Progress review</td>
-            <td>Shared progress on CSS and homepage design</td>
-        </tr>
-    </table>
+    <tr>
+        <td>12th March</td>
+        <td>Hybrid</td>
+        <td>Review progress on individual pages</td>
+        <td>I shared my Home Page progress and received feedback on layout and design</td>
+    </tr>
+
+    <tr>
+        <td>19th March</td>
+        <td>Face-to-face</td>
+        <td>Work on styling and consistency</td>
+        <td>I refined the global CSS and improved the navigation bar alignment</td>
+    </tr>
+
+    <tr>
+        <td>25th March</td>
+        <td>Face-to-face</td>
+        <td>Finalise Gallery Page functionality</td>
+        <td>I completed JavaScript features including modal interaction and user controls</td>
+    </tr>
+
+    <tr>
+        <td>26th March</td>
+        <td>Face-to-face</td>
+        <td>Final review and testing</td>
+        <td>I checked validation, fixed errors, and ensured all pages met requirements</td>
+    </tr>
+</table>
 </section>
 
 <!-- ===== REFERENCES ===== -->
@@ -290,6 +350,13 @@
         W3Schools (2024). HTML, CSS and JavaScript Tutorials. 
         <a href="https://www.w3schools.com/" target="_blank">
             https://www.w3schools.com/
+        </a>
+    </li>
+
+    <li>
+        Westminster University Lecture notes.
+        <a href="https://learning.westminster.ac.uk/" target="_blank">
+            https://learning.westminster.ac.uk/
         </a>
     </li>
 
