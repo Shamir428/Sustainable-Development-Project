@@ -1,224 +1,591 @@
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Editor Student - provide your student name</title>
+    <title>Page Editor Student 3 | Daniel Nguyen</title>
+    <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    <style>
+        .stud,
+        .page-editor-main section,
+        .editor-aside {
+            background: var(--white);
+            border-radius: 12px;
+        }
 
+        .stud {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto 0;
+            padding: 24px;
+        }
+
+        .page-editor-main section {
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .page-editor-main h2 {
+            color: var(--dark);
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        .page-editor-main h3 {
+            margin: 18px 0 10px;
+            color: var(--dark);
+        }
+
+        .editor-aside ul {
+            padding-left: 18px;
+        }
+
+        .editor-aside li {
+            margin-bottom: 10px;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #d1d5db;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #eaf2ff;
+        }
+
+        code {
+            background: #eef2ff;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .top {
+            text-align: right;
+        }
+
+    </style>
 </head>
 <body>
-    
-    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
 
     <header id="top">
-        <h1>Replace this header with your teams' website header</h1>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="img/healthwellbeing.jpg" alt="Health and wellbeing logo">
+                <span>Health & Wellbeing</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="ais.html">Action Impact Simulator</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="stud">
-        <h2>Student name, team name, student role</h2>
+        <h1>Page Editor</h1>
+        <h2>Daniel Nguyen | Team Name: JAPAN | Student 3 – Feedback, Team</h2>
+		<p>
+    		This page includes the technical implementation of the pages I created for the group coursework:
+    		<strong>feedback.html</strong>, <strong>team.html</strong>, and <strong>content_ST3.html</strong>.
+		</p>
     </section>
 
-    <div class="container">
-        <!-- Main content area -->
-        <main>
+	<div class="container">
+    	<main class="page-editor-main">
 
-            <!-- Update those first three sections for the pages you were responsible to implement -->
+	<section id="feedback">
+    	<h2>Feedback Page</h2>
+    	
 
-            <section>
-                <h2 id="home">Home page</h2>
-                    <h3>Technical Description</h3>
-                        <p>Explain the HTML structure, the CSS techniques used to implement this page, and how interactivity was integrated with JavaScript. Justify the logic and purpose of the key HTML tags, CSS styling choices, and JavaScript functionality, focusing on functionality and design without copying large code sections. Explain the purpose of the main HTML tags, CSS properties, and JavaScript features used. Specify the key HTML tags, CSS properties, and JavaScript elements that create the page structure, styling, and interactivity.</p> 
-                    
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
-                    
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+	
+    	<h3>Technical Description</h3>
+    	
+    	<br>
+    	
 
-                    <h3>Link to the page</h3>
-                        <p><a href="splash.html">Include a link to the actual page you describe.</a></p>
-            </section>
-
-            <section>
-                <h2 id="gallery">Gallery Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>Explain the HTML structure, the CSS techniques used to implement this page, and how interactivity was integrated with JavaScript. Justify the logic and purpose of the key HTML tags, CSS styling choices, and JavaScript functionality, focusing on functionality and design without copying large code sections. Explain the purpose of the main HTML tags, CSS properties, and JavaScript features used. Specify the key HTML tags, CSS properties, and JavaScript elements that create the page structure, styling, and interactivity.</p> 
-
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
-
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-                        
-                    <h3>Link to the page</h3>
-                        <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
-            </section>
-
-            <section>
-                <h2 id="content">Content Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>Explain the HTML structure, the CSS techniques used to implement this page, and how interactivity was integrated with JavaScript. Justify the logic and purpose of the key HTML tags, CSS styling choices, and JavaScript functionality, focusing on functionality and design without copying large code sections. Explain the purpose of the main HTML tags, CSS properties, and JavaScript features used. Specify the key HTML tags, CSS properties, and JavaScript elements that create the page structure, styling, and interactivity.</p> 
-
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
-
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-                        
-                    <h3>Link to the page</h3>
-                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
-            </section>
-
-            <section>
-                <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                    <p>Detail any challenges encountered during the implementation process and explain how they were resolved. Reflect on the lessons learned from overcoming these challenges.</p> 
-            </section>
-
-            <section>
-                <h2 id="compliance"> Compliance</h2>
-                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful. <a href="https://intranet.ecs.westminster.ac.uk/modules/4COSC011W/compliance.html" target="_blank">See the lecture notes for more details on compliance.</a></p> 
-
-                    
-            </section>
-
-            <section>
-                <h2 id="group"> Group Meetings and Individual Contribution Log</h2>
-                    <p>Include a Group Meetings and Contribution Log that documents your engagement with group work.</p> 
-                    Requirements:
-                        <ul> 
-                            <li>A minimum of six (6) group meetings must be recorded.</li>
-                            <li>Each student must provide their own account of the meetings.</li>
-                            <li>The log must focus on individual contribution, not just group activity.</li>
-                        </ul>
-                        <p>Feel free to follow the example table structure below:</p>
-
-                        <table >
+    	
+    	<p>	
+        The Feedback page was built using the shared website structure which was the header and footer, as well embedding
+        the global css. Inside the main part of the page, I organized it into an intro
+        section, a programmes section, a ratings and reviews section, and then the feedback form. This was to create
+        distinction between different parts of the page in terms of both visually and also purpose wise.
+  	  </p>
+  	  <h4>Programme section</h4>
+  	  <p>
+        In the programmes section, main features were the filter bar (which doesn't functionally work) and 
+        and the programme cards displaying different opportunities available to do for SDG 3. 
+        I implemented the filter bar by first creating a div container to add and group multiple elements together for it,
+        as using the select form control element on its own (which creates a dropdown list) was not enough as form html elements
+        don't have much css properties for visual styling.
+    	Inside the div container, I added the select element and label for it.
+    	As far as major CSS styling and techniques, I applied border and padding css properties to the select element,
+    	to display selected dropdown menu option more prominently and make it more readable, as by default, the selected option
+    	almost touches the elements border and is not visually prominent. I also applied background color and border css properties to the filter bar div. Initially
+        this was done to make the select dropdown element look more like a filter bar, but then I realized, because 
+        this is a block element, it takes up the full available width, so the added background color and border css styling,
+        created a neat but appealing visual distinction and transition between programme section intro and the programme cards.
+        Lastly, this was also beneficial for the next part as well, because the programme cards content and information had to be scrollable,
+        however, without clear visual indication of where specifically on the programme section is scrollable and not, users could have trouble
+        trying to scroll through the content, worsening usability of website.
+        
+    </p>
+    <h4>Programme card's grid layout</h4>
+    <p>
+        For the programme cards, I decided to use a div container first.
+        This was because I wanted to arrange and style the cards in a consistent and even layout.
+        For the SDG 3, I felt like I had a many options to talk about for opportunities you can do. 
+        Which is why I decided to make the div a grid container (display: grid) to be able to arrange
+        elements inside div in rows and columns consistently, as displaying the cards horizontally would not fit
+        and vertically would not look good, and using inline-block or other properties, would not be as predictable
+        and consistent as using display grid. I defined the grid layout as three equal columns by using 1fr 1fr 1fr css value
+        for the css property. 
+        To enable scrolling effect of the content inside grid (programme cards)
+        I limit the max height of the grid to 55% of the view port, so that the content inside the
+        programme section will occupy at most about half of the screen height, leaving any remaining
+        content to end outside. So then I applied overflow: auto to grid, to contain the programme cards inside the grid
+        and what ever exceeds the height limit becomes scrollable part of content.
+        
+   	<h4>Programme cards</h4>
+    <p> The programme cards are implemented
+        using an article tag, which visually visually looks and behaves exactly like a div but semantically, it is used to represent a self-contained piece of content, 
+        which a programme card fits in this context.
+   		Inside each article tags, I added a h3 heading for the programme title, to maintain clear semantic structure
+   		and hierarchy for the html, as I include a h2 section heading earlier, making this heading to be a subheading of the h2 heading.
+   		I've also added an image illustrating each of the programmes with appropriate alt text for accessibility for screen readers, paragraph and button in each
+   		article. For CSS styling, I first 
+   		added background color for the card, to give the visual distinction of the cards compared to the programme section background.
+   		But to create the visual appearance of a card, I applied gap css property to the grid, so that there was horizontal spacing between the columns,
+   		indicating where now a card starts and ends (horizontally).
+   		Other techniques, I've used was for instance applying object-fit: cover declaration to the image inside of the card.
+   		This was because initially since all of the images' sizes were much bigger
+   		than the actual card, the images's aspect ratio was changed scale down to fit inside the card, making images look worse. With object-fit: cover,
+   		it kept the image aspect ratio the same but cut off the content was went over the image element box. Last major
+   		css techniques I used were, adding a hover effect to the button, by adding the pseudo-class :hover then applying css properties like
+   		background color and border radius with different values than normal button like.
+    </p>
+    <h4>Reviews summary section</h4>
+    <p>
+    The next section for ratings and reviews summary, I used div container overall rating display of the programmes with article elements again to create the review cards.
+    I've followed a similar approach of visually creating the appearance of the card, styling the border, radius, adding
+    gap property. But I wanted to create a clear visual distinction between the two cards, and why this card makes more sense
+    to be seen as for reviews adding a different background color to the card, changing the positioning of the text from previously
+    on the left side of the programme card to the middle of the review card, as text being displayed in the middle, usually represents
+    less focus on informational text (as information text usually is long, therefore, for the sake of spacing, it's better to be left aligned)
+    and more emphasis on the content rather than amount of information, which fits reviews more.
     
-                            <thead>
-                                <tr>
-                                    <th colspan="6">Group Meetings and Contribution Log</th>
-                                </tr>
-                                <tr>
-                                    <th>Meeting</th>
-                                    <th>Date &amp; Time</th>
-                                    <th>Format</th>
-                                    <th>Objective</th>
-                                    <th>Attended</th>
-                                    <th>Your Individual Contribution</th>
-                                </tr>
-                            </thead>
-                        
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>3 Feb 2026</td>
-                                    <td>Face-to-face</td>
-                                    <td>Agree SDG and assign roles</td>
-                                    <td>Yes</td>
-                                    <td>I agreed to take responsibility for the Home Page and template.</td>
-                                </tr>
-                        
-                                <tr>
-                                    <td>2</td>
-                                    <td>17 Feb 2026</td>
-                                    <td>Online</td>
-                                    <td>Review Home Page design</td>
-                                    <td>Yes</td>
-                                    <td>I suggested the colour palette and card-based layout.</td>
-                                </tr>
-                        
-                                <tr>
-                                    <td>3</td>
-                                    <td>03 Mar 2026</td>
-                                    <td>Hybrid</td>
-                                    <td>Progress review</td>
-                                    <td>No</td>
-                                    <td>I reviewed meeting notes and followed up with tasks.</td>
-                                </tr>
-                        
-                                <tr>
-                                    <td>4</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                        
-                                <tr>
-                                    <td>5</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                        
-                                <tr>
-                                    <td>6</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                        
-                            </tbody>
-                        
-                        </table>
-                    
+    
+    </p>
+    
+    <h4>Feedback form</h4>
+    <p>
+    	The feedback form I wrote is a full and basic complete code of a form with fieldsets, legends and form control elements. However I did not add any attributes
+    	in the form tag to let the form send or get data from anywhere. I also added novalidate attribute to prevent the browser's default validation
+    	of some inputs, to create my own. In order to make the form interactive such as adding data input validation upon submit
+    	printing success message if all inputs are correct and live remaining character counter for feedback message, I added id's with clear names to each
+    	form control input in the form. In order to print the potential error messages, I added span elements with no html text by default below each label.
+    	I used the CSS technique of using another pseudo-class :empty with class for error message spans to select the  
+    	span if its text is empty and added display: none, to hide the element including the its vertical spacings it would've had, creating
+    	unintentional vertical space between label and input control if no error message is shown. 
+    	Lastly for the live remaining character text, I added a p element below textarea element for feedback message
+    	and wrote "Remaining characters:" inside it but then also added a span element with an id to be later
+    	to display the amount of characters remaining dynamically.
+    <h4>JS for Live remaining characters counter</h4>
+    	    <p>
+    	I first used the DOM function getElementById and the argument value of the id name of the span for remaining characters text
+    	on the document objet which represents the whole html page to find the span element's DOM object and stored in 
+    	remainingCharsText variable. The variable now holds the reference to the DOM object which represents the remaining chars
+    	span, so I used const to create variable instead of let, as variables don't store values of objects but just reference, which 
+    	for safety can stay fixed.
+    	I also created a const variable storing the referencing of the feedback's textarea input using same DOM method
+    	but used the id feedback to find the feedback textarea element.
+    	With two of the main elements' DOM objects stored as variables, I attached an event listener
+    	to the feedback textarea element with "input" event as the first parameter, which will listen to
+    	any input changes to the textarea element (whether it's adding or removing characters) and fires an event handler
+    	which is a function, in this case I reference and define as an anonymous function. This function will
+    	implement the counting logic for remaining characters of the feedback text. 
+    	I first created a variable that takes the textarea's object's value which in this case is
+    	the value of the actual text message typed as object's have attributes and methods that you can use.
+    	To count remaining characters left, I created another variable to store the length of the feedback text message
+    	Then I subtracted the length and current amount of characters feedback message has from 250, as that was my intended
+    	max character count, and stored that in remainingChars variable. Lastly, using the remaining chars DOM element defined earlier,
+    	I updated the span's text content using the textContent property and setting it equals to the remaining characters variable
+    	So lastly, this will then compute every time, and update the live counter of remaining characters left.
+    <p>
+    
+    <h4>JS for input validation and success message for form</h4>
+    <p>
+    	First I created the variables for all of the form control and the different error message span elements' DOM objects
+    	I added this time another event listener, this time for submit event which the form can produce a submit button
+    	is clicked, hence I attached the event listener to the form DOM object. This time for the function argument, I referenced a named
+    	function. That function is called handleForm() and it will run and check each time the form gets submitted. The event handler function itself
+    	will not however not directly handle the logic of validating the different form inputs, as coursework specs say, form should handle
+    	both input validation and printing success messages, so this function will handle what type of action the form should make after submission.
+    	So first, by default, forms even without get or post method will refresh or redirect back to the top of the page after submission, but 
+    	I want to either print all error messages from my own input validation logic or print a success message, so I first for the function definition
+    	add an argument with name event, which would during function call / during event handling take the passed argument value of the event object,
+    	which is an object which is created each time the specific event an event listener is listening to is fired. The event object has a method called
+    	preventDefault() which prevents the default action of what the trigger of this event does. Then lastly I will call the
+    	validateForm() function but also I want to handle the logic of printing success message, so I added an if statement
+    	around validateForm(), and if the value of that function call is true, it will print success message. Now lastly, as just revealed,
+    	the validateForm() will print a true or false boolean value based on user input. However, that is mainly for the if statement to check
+    	if all inputs are correct, to print success message. Because validateForm consists all if statements which check to an adequate extent
+    	if all of the different input values upon form submission is correct - is it not empty, follows the format, etc. I used several techniques such as
+    	using String methods and regex to validate the some of the input elements' values because String methods can give you multiple insights 
+    	of a string like checking the length, if it contains certain specific characters and also provides ways to modify the strings (but it returns a new string instead)
+    	such as cleaning the input data before validating by for example removing trailing white space or removing acceptable symbols in the phone number input.
+    	Lastly a regex pattern is an object which defines a matching rule for text using a sequence of characters.
+    	In this case it was helpful because I was able to, partially for instance, add some input validation for the telephone number such as adding an if statement
+    	to check if the regex pattern of specific characters valid for a telephone number such as digits, +, etc. is valid or not valid for the telephone string. 
+    </p>
+
+
+ 	   <h3>Accessibility</h3>
+	    <p>
+        For accessibility, I tried to make the feedback page clear and understandable by using proper labels for the form
+        fields, fieldsets and legends to group related inputs, and alt text for all images in the programme cards.
+        Error messages are shown close to the relevant fields, so it is obvious for the readers what input is wrong. I also
+        added an aria-live="polite" attribute for the form status message so screen reader users can be informed when the
+        confirmation text appears after a successful submit. The page also uses a clear heading structure and seperate
+        sections, which helps with readability and navigation.
+  	  </p>
+
+  	  <h3>Link to the validation page</h3>
+  	  <p>
+        <a href="validation_ST3.html#feedbackVal">Go to the Feedback page validation evidence</a>
+    	</p>
+
+    <h3>Link to the page</h3>
+    <p>
+        <a href="feedback.html" target="_blank">Open feedback.html</a>
+    </p>
+	</section>
+
+<section id="team">
+    <h2>Team Page</h2>
+
+    <h3>Technical Description</h3>
+    <p>
+        The Team page was built using the same shared website structure with the same header, navigation menu and footer.
+    	The main content of the team page contains the page heading and short intro paragraph text. Then it features
+    	a section called team-members where I implemented article elements again for the cards of each of the team members.
+    	As far as the CSS techniques used, this time I wanted the card to be much more visually prominent, as the card's
+    	visual aesthetics was part of the showcase of team members, as for the feedback page according to the specs
+    	I didn't have to write as much as in the feedback page. So because we only had 3 members, I knew that it would be
+    	most efficient to display the cards in a row. And if I'm just going to deal with rows, I will use a flex container to display
+    	the cards inside it, which is the section with class called team-members. For CSS techniques, since the specs said to make the
+    	team cards more interactive and have visual effects on hover such as revealing detailed member details only on hover, I used 
+    	the css property transform and translateY() css value to extend the team member card's to end deeper. I
+    	did this so that when the card is hovered over, using pseudo-class and those css properties,
+    	I can add the area of where the detailed members description is shown. For the detailed members description, I first set their
+    	default state (when it's not hovered) to be invisible using opacity, have a max height of 0, because otherwise they would just behave 
+    	as any normal text and taking up additional vertical space of the card , so before it's hovered and revealed, there would be
+    	unnecessary deadspace. And to prevent the member details text by default going over the card, since
+    	the card only expands / extends lower if it's hovered, I applied overflow: hidden; to the member details text
+    	which hides any content inside an element in this case the card from going over it, because once the card
+    	extends, that's where the content of the members details text can be shown. So then lastly I added a hover and focus pseudo-classess
+    	on the css selector of the team member card, when the card is hovered or clicked the member details text, smoothly is revealed 
+    	and finally shown by adding the opacity: 1 declaration and a transition css property with the value of 0.3 seconds which means when
+    	one of the team member cards for instance get hovered, first the card extends then the detailed description gets slowly revealed (just 0.3 seconds).
+    	I also added the transition css property to the cards when they are hovered, so that the effect of the card extending deeper
+    	is more smooth. Lastly I've used few more CSS techniques such as scaling the size of the image
+    	by using transform: scale() css declaration and also box shadow css property to make the cards more visually
+    	prominent as I wanted.
+    </p>
+
+    <h3>Accessibility</h3>
+    <p>
+        For accessibility, I included alt text for each team member image and kept the text structure clear with
+        headings and short descriptions. I also made each team card keyboard-focusable by adding tabindex="0",
+        so the cards can be usable by keyboard input as well. This helps make the page more accessible and easier
+        to navigate in different ways.
+    </p>
+
+    <h3>Link to the validation page</h3>
+    <p>
+        <a href="validation_ST3.html#teamVal">Go to the Team page validation evidence</a>
+    </p>
+
+    <h3>Link to the page</h3>
+    <p>
+        <a href="team.html" target="_blank">Open team.html</a>
+    </p>
+</section>
+
+            <section id="content">
+                <h2>Content Page</h2>
+
+                <h3>Technical Description</h3>
+                <p>
+                    My content page focuses on preventive health. The main section first begins with a hero section introducing the
+                    topic, followed by an internal navigation section labelled and its label "on this page", and then multiple content sections with
+                    unique id values. This structure allows the page to support internal linking and makes the content
+                    easier to navigate.
+                </p>
+                <p>
+                	Unlike the global css and shared html template, I centered the heading because my goal approach
+                	to creating this content page was not just go be informative and just write information, it was also
+                	a call to action for people to indeed work on their preventive health by reading the not only the information
+                	I talk about in regards to what preventive health is, but also I mean how to take the actions,
+                	thus for the h1 heading, I actually labelled it with a hint of call to action which I said preventive health: small
+                	actions, better outcomes. So centering this, will strengthen and emphasize the message and call to action I want users
+                	to understand from reading the content page, as the h1 heading is the most prominent text in all html pages.
+                <p>
+					For the images, I didn't want to overuse them and add an image element after each section to make the importance of the image
+					seem a bit higher, as the number of images used were not a lot, hence the readers may pay attention to it more, which in this case
+					I strategically tried to find the best images that showed people and doing something that is an example of the SDG 3, which
+					once again promotes the call to action of the content page I want to produce. 
+                </p>
+                <p>
+					The CSS styling weren't heavily used for this page
+					except for the internal navigation for sections and go the top button. 
+					The internal navigation had a distinct and prominent look to it by applying
+					border, border-left, background-color css properties to prevent the internal nav
+					blending it too much with the background. I made the margin of the nav to be also bigger, meaning
+					at this point the internal nav is prominent, takes up full width with a lot of vertical space, because initially
+					without much emphasis on making the internal nav look prominent, the text links inside the nav
+					and overall the nav didn't even looked like a navigation menu but rather just some text, but now by creating
+					a clear distinction, the users will know that this component is nav menu for internal section because the website
+					really emphasizes it. Lastly the go to the top button, I've used CSS technique of reducing the opacity of the background of the button
+					so that users, when reading near the bottom of their view port / screens, they can still relatively see what the text says, which supports
+					usability of website as well.
+                </p>
+
+                <h3>Accessibility</h3>
+                <p>
+                	
+                    Accessibility on the content page was addressed by using meaningful headings in a logical order, descriptive
+                    alternative text for all images, and also clear internal navigation menu so users can quickly move to different parts
+                    of the page. The “Back to top” link also improves usability by allowing users to return to the beginning of the page
+                    without excessive scrolling. Section structure, readable paragraphs, and semantic HTML all help support both screen
+                    reader users and general readability. Lastly the aria-label attribute added in the nav tag for the internal nav menu for sections
+                    helps users with screen readers to be able to distinguish between the difference of the internal and the main nav menu, as I had  both of them
+                    on the same page.
+                </p>
+
+                <h3>Link to the validation page</h3>
+                <p>
+                    <a href="validation_ST3.html#contentVal">Go to the Content page validation evidence</a>
+                </p>
+
+                <h3>Link to the page</h3>
+                <p>
+                    <a href="content_ST3.html" target="_blank">Open content_ST3.html</a>
+                </p>
             </section>
 
-            <section>
-                <h2 id="ref">References</h2>
-                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
-                    <ul class="ref">
-                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
-                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
-                    </ul>
+            <section id="challenge">
+                <h2>Challenges and Lessons Learned</h2>
+                <p>
+                    One challenge was balancing the coursework requirements with page clarity. On the Feedback page, I needed to include
+                    several different sections such as the programme directory, reviews summary, and interactive form while keeping the
+                    page organised. I resolved this by separating the page into clearly defined content sections and using repeated card
+                    structures to keep the layout consistent.
+                </p>
+                <p>
+                    Another challenge was implementing JavaScript validation in a way that gave useful feedback without making the form
+                    logic too confusing. I addressed this by separating the validation into functions, clearing previous errors before
+                    each validation attempt, and showing messages near the relevant fields. This made the code easier to read and the
+                    user feedback easier to understand.
+                </p>
+                <p>
+                    On the Team page, one difficulty was keeping the expandable details short enough to fit inside the card layout while
+                    still saying something meaningful. I resolved this by shortening the contribution text and using CSS transitions so
+                    the details could appear without making the card look too cluttered by default.
+                </p>
             </section>
+
+            <section id="accessibility-overview">
+                <h2>Accessibility Considerations</h2>
+                <p>
+                    Across my pages, I tried to apply accessibility through semantic structure, alternative text, readable content
+                    hierarchy, labelled form fields, and meaningful internal navigation. On interactive elements, I considered both
+                    visual users and keyboard users. On the Feedback page, I used labels, grouped fields, and a live region for
+                    submission confirmation. On the Team page, I used focusable interactive cards and visible focus styling. On the
+                    Content page, I used heading hierarchy, internal anchor navigation, and descriptive image text.
+                </p>
+                <p>
+                    These choices improve usability by helping users understand page structure more easily, interact with forms more
+                    clearly, and access content via different methods (screen readers, clicking, typing)
+                </p>
+            </section>
+
+            <section id="compliance">
+                <h2>Compliance</h2>
+                <p>
+                    The pages I created were designed to comply with responsible web publishing and JANET-related expectations by
+                    avoiding offensive, illegal, or misleading content and by keeping the website focused on an educational topic.
+                    The content is relevant to the coursework theme and does not include material that would be inappropriate for a
+                    university-hosted student website.
+                </p>
+                <p>
+                    I also considered responsible use of external resources. Images used on the site should be referenced properly in
+                    the relevant documentation, and any third-party resources should be used in a way that respects copyright and
+                    attribution requirements. In addition, the written content of the pages was produced for the coursework rather than
+                    copied directly from external sources, which supports academic integrity.
+                </p>
+                <p>
+                    The pages also avoid collecting or transmitting real personal data to a server. For example, the feedback form is
+                    interactive for user experience purposes, but it does not actually submit data to a backend system. This makes it
+                    more appropriate for a static coursework website and reduces privacy risks.
+                </p>
+            </section>
+
+<section id="group">
+    <h2>Group Meetings and Individual Contribution Log</h2>
+    <p>
+        This section records my own account of the group meetings held during the development of the coursework.
+        The meeting details below are based on the group’s project timeline and should be completed accurately,
+        especially the attendance and my individual contribution for each meeting.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="6">Group Meetings and Contribution Log</th>
+            </tr>
+            <tr>
+                <th>Meeting</th>
+                <th>Date &amp; Time</th>
+                <th>Format</th>
+                <th>Objective</th>
+                <th>Attended</th>
+                <th>Your Individual Contribution</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>16 February 2026</td>
+                <td>Face-to-face</td>
+                <td>Initial group meeting to choose the SDG/theme and agree the main role allocation for each student.</td>
+                <td>Attended</td>
+                <td>After picking my team. I suggested 3 SDG goals that I think would be strong to design a website about, and the SDG 3 was picked. Picked my role as well.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>5 March 2026</td>
+                <td>Hybrid</td>
+                <td>Discuss the shared website structure, navigation, layout consistency, and how the common template would be used across pages.</td>
+                <td>Attended</td>
+                <td>Help team members initialize github repo locally and navigate and use git</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>12 March 2026</td>
+                <td>Face to face</td>
+                <td>Review progress on individual pages and discuss early design changes, content choices, and any problems found during development.</td>
+                <td>Attended</td>
+                <td>Showed my content page. Gave feedback on the global.css and shared html code structure to student 1. </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>19 March 2026</td>
+                <td>Face-to-face</td>
+                <td>Check page styling, consistency with the shared design, and review progress on unfinished features across the website.</td>
+                <td>Attended</td>
+                <td>I started slowly finishing the process of learning javascript and in context of web dev, and transitioned to developing feedback page, so I would've been confident with developing the feedback's interactive form. At this point I was a behind, however, I let my group members to know that</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>25 March 2026</td>
+                <td>Face-to-face</td>
+                <td>Penultimate review to check linking, page completion, remaining fixes, and final improvements before submission.</td>
+                <td>Attended</td>
+                <td>Help fix git issues such as pulling and synching from github repo to student 2 due to issues in local dev environment. Continued working on my feedback page. Give feedback to student 1 about global.css, specifically distinguishing global and page specific css stylings. </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>26 March 2026</td>
+                <td>Face-to-face</td>
+                <td>Final review meeting to carry out last checks, validation, and submission preparation for the group website.</td>
+                <td>Attended</td>
+                <td>Discuss about submission criteria and requirements. Notified members, I was behind, however, it wouldn't stall their own submission process. </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="ref">
+    <h2>References</h2>
+    <ul class="ref">
+        <li>
+            University of Westminster (2026) <i>Web Design and Development Coursework Specification (2025/26)</i>.
+        </li>
+        <li>
+            MDN Web Docs (2026) HTML: HyperText Markup Language.
+            Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML</a>
+        </li>
+        <li>
+            MDN Web Docs (2026) CSS: Cascading Style Sheets.
+            Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS</a>
+        </li>
+        <li>
+            MDN Web Docs (2026) JavaScript.
+            Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript</a>
+        </li>
+        <li>
+            W3Schools (2026) HTML, CSS and JavaScript Tutorials.
+            Available at: <a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a>
+        </li>
+        <li>
+            GeeksforGeeks (2026) HTML, CSS and JavaScript Programming Articles and Examples.
+            Available at: <a href="https://www.geeksforgeeks.org/" target="_blank">https://www.geeksforgeeks.org/</a>
+        </li>
+        <li>
+            W3C (2026) Markup Validation Service.
+            Available at: <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a>
+        </li>
+        <li>
+            Unsplash (2026) Unsplash.
+            Available at: <a href="https://unsplash.com/" target="_blank">https://unsplash.com/</a>
+        </li>
+        <li>
+            Pexels (2026) Pexels.
+            Available at: <a href="https://www.pexels.com/" target="_blank">https://www.pexels.com/</a>
+        </li>
+        <li>
+            Pixabay (2026) Pixabay.
+            Available at: <a href="https://pixabay.com/" target="_blank">https://pixabay.com/</a>
+        </li>
+        <li>
+            OpenAI (2026) ChatGPT – used to discuss coursework requirements, clarify parts of the specification, and support planning, debugging and wording decisions during development.
+            Available at: <a href="https://chatgpt.com/" target="_blank">https://chatgpt.com/</a>
+        </li>
+    </ul>
+</section>
 
             <p class="top"><a href="#top">Go top</a></p>
         </main>
 
-        <!-- Sidebar area -->
-        <aside>
+        <aside class="editor-aside">
             <h3>Core pages developed:</h3>
-
-        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
             <ul class="top-level-ul">
-                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
-                <li>Student 1</li>
-                <ul>
-                        <li><a href="#home">Home page </a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#content">Content</a></li>
-                    </ul>
-                <li>Student 2</li>
-                <ul> 
-                    <li><a href="#">Splash Screen</a></li>
-                    <li><a href="#">Action Impact Simulator</a></li>
-                    <li><a href="#">Content</a></li>
-                </ul>
-                    
                 <li>Student 3</li>
-                    <ul>
-                        <li><a href="#">Feedback</a> </li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Content</a></li>
-                    </ul>
-                <li>Student 4</li>
-                    <ul>
-                        <li><a href="#">User Profile </a></li>
-                        <li><a href="#">Sitemap</a></li>
-                        <li><a href="#">Content</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="#feedback">Feedback page</a></li>
+                    <li><a href="#team">Team page</a></li>
+                    <li><a href="#content">Content page</a></li>
+                </ul>
                 <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#accessibility-overview">Accessibility Considerations</a></li>
                 <li><a href="#compliance">Compliance</a></li>
                 <li><a href="#group">Group Meetings and Individual Contribution Log</a></li>
                 <li><a href="#ref">References</a></li>
@@ -227,7 +594,13 @@
     </div>
 
     <footer>
-        <p>Replace this footer with your teams' website footer</p>
+        <p>
+            Daniel Nguyen | w21323643
+            <br>
+            <a href="pageEditor_ST3.html">Page editor</a> |
+            <a href="validation_ST3.html">Validation</a>
+        </p>
     </footer>
+
 </body>
 </html>

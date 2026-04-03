@@ -39,9 +39,9 @@ text-align: center;
 	transition: 0.3s;
 }
 
-.team-member img:hover {
+.team-member:hover img,
+.team-member:focus img {
   opacity: 0.75;
-  transition: 0.3s;
   transform: scale(1.08);
 }
 
@@ -53,13 +53,21 @@ text-align: center;
   text-align: left;
 }
 
-.team-member:hover .member-details {
+.team-member:hover .member-details,
+.team-member:focus .member-details {
   max-height: 220px;
   transition: 0.3s;
   opacity: 1;
 }
 
 
+
+.team-member:focus {
+  background-color: #dbeafe;
+  transform: translateY(-6px);
+  outline: 3px solid #60a5fa;
+  border-radius: 1.5em;
+}
 
 
 

@@ -10,8 +10,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
   gap: 1.5em;
-  max-height: 55vh; /* Limit grid section for programme cards with max height of 50% of the viewport height (browser's visible window area) */
-  overflow-y: auto; /* Make content stay inside the grid's max-height, if it becomes taller, then it adds a vertical scrollbar so the rest of the content can be scrolled */ 
+  max-height: 55vh;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -19,10 +19,6 @@
   background-color: #e6f2ff;
   border: 1px solid #cfe4ff;
   border-radius: 12px; 
-  /* Add padding to card so there is more space between the content inside card and border, so image and text don't touch the edge of card.
-  This was better than using horizontal margins because I would've needed to add horizontal margins and specifically select each child element in the card such as p, img, h3 
-  And also the global css already styles all elements to have border-box box sizing, so that the padding itself accounts to entire width of elements, so the cards don't over their layouts and stick out more than the feedback page
-  */
   padding: 1em; 
 }
 
@@ -30,7 +26,7 @@
   width: 100%;
   height: 200px;
   margin: 0.75em 0;
-  object-fit: cover; /* This CSS property styles how the image content itself is fitted inside the img element box, in this case, the css value scale the image (but keep the original proportions) so the whole img box is covered */
+  object-fit: cover; 
 }
 
 .programme-btn {
@@ -212,4 +208,18 @@
 	margin-top: 1rem;
 	font-weight: 600;
 	color: green;
+}
+
+.error-message {
+  display: block;
+  color: #b91c1c;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.2em;
+  margin-bottom: 0.45em;
+  min-height: 1.1em;
+}
+
+.error-message:empty {
+  display: none;
 }
